@@ -1,0 +1,19 @@
+/* *{
+    
+    box-sizing: border-box;
+    font-family:arial;
+    font-size: 12px;
+    margin: 0;
+        
+} */
+
+.item30 {
+    grid-column: 1 / span 6;
+}
+
+.item31 {
+    grid-column: 1 / span 3;
+}
+.item32 {
+    grid-column: 4 / span 3;
+}
