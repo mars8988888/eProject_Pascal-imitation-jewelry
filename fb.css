@@ -48,7 +48,7 @@ table {
     width: fit-content;
     background-color: #feeecb;
     border: 1px solid #feeecb;
-    box-shadow: 20px 20px 8px #888888;
+    box-shadow: 5px 5px 8px #888888;
     cursor: pointer;
     
 }
@@ -83,7 +83,7 @@ table input[type=submit], input[type=reset] {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 6px;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 5px 8px #888888;
 
 }
 #john {
@@ -95,7 +95,7 @@ table input[type=submit], input[type=reset] {
     width: fit-content;
     background-color: #feeecb;
     border: 1px solid #feeecb;
-    box-shadow: 20px 20px 8px #888888;
+    box-shadow: 5px 10px 8px #888888;
     cursor: pointer;
     
 }
@@ -155,7 +155,7 @@ img {
     font-size: 35px;
     float: left;
     padding: 10px 50px;
-    border: 1px solid black;
+    border: 1px solid grey;
     border-radius: 10px;
     box-shadow: 20px 20px 8px #888888;
     

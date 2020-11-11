@@ -49,6 +49,7 @@
     border: 1px solid #feeecb;
     box-shadow: 20px 20px 8px #888888;
     cursor: pointer;
+    border-radius: 7px;
 }
 #item32 h3 {
     text-align: left;
