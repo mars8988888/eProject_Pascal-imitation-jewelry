@@ -10,9 +10,10 @@
     display: grid;
     grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
     padding: 10px;
+    margin: 0px;
 }
 .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color:  #fffcf5;  ;
     border: 1px solid black;
     padding: 20px;
     font-size: 30px;

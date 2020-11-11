@@ -1,9 +1,9 @@
-*{
-    
+
+/* *{
     box-sizing: border-box;
-    
-        
-}
+    margin: 0px;
+    background-color: #f7e8c7;  
+} */
 
 /* --------------------------------------------------------------------item 33------------------------------------------------------------------------------------------------ */
 
@@ -35,10 +35,14 @@ form {
 table {
     width: 100%;
 }
-table th{
+#please {
     text-align: left;
     padding-bottom: 30px;
     padding-top: 30px;
+    border-radius: 5px;
+    /* box-shadow: 20px 20px 8px #888888;
+    width: fit-content;
+    font: bold 30px arial; ; */
 }
 table  tr, td {
     border: 1px solid white;
@@ -63,7 +67,7 @@ table textarea{
     font-size: 20px;
 }
 table input[type=submit], input[type=reset] {
-    background-color: grey;
+    background-color: #2cbaac;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -71,6 +75,7 @@ table input[type=submit], input[type=reset] {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 6px;
+
 }
 #john {
     text-align: left;
@@ -126,11 +131,15 @@ img {
     grid-column: 4 / span 3;
 }
 #item36 p{
-    width: 100%;
+    width: 80%;
+    margin-left: 60px;
     text-align: justify;
     font-size: 35px;
     float: left;
     padding: 10px 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 20px 20px 8px #888888;
     
 }
 /* --------------------------------------------------------------------item 37------------------------------------------------------------------------------------------------ */
@@ -141,6 +150,7 @@ img {
     font: bold 50px arial;
     text-align: center;
     margin-bottom: 40px;
+    
 }
 
 /* --------------------------------------------------------------------CSS for google reviews----------------------------------------------------------------------------------------------- */
