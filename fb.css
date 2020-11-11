@@ -1,0 +1,33 @@
+/* *{
+    
+    box-sizing: border-box;
+    font-family:arial;
+    font-size: 12px;
+    margin: 0;
+        
+} */
+
+/* --------------------------------------------------------------------item 33------------------------------------------------------------------------------------------------ */
+
+.item33 {
+    grid-column: 1 / span 6;
+}
+
+.item34 {
+    grid-column: 1 / span 6;
+}
+form {
+    border: 1px solid black;
+}
+table  tr, td {
+    border: 1px solid black;
+}
+
+
+
+.item35 {
+    grid-column: 1 / span 3;
+}
+.item36 {
+    grid-column: 4 / span 3;
+}
