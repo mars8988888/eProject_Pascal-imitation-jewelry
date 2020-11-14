@@ -4,24 +4,25 @@
         <title>feedback</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<!---------------------------------------------------------day la css-------------------------------------------------------------------------------------------------->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-        
-
         <link rel="stylesheet" href="ep.css" >
         <link rel="stylesheet" href="fb.css" >
-        <script src="ep.js"></script>
+<!---------------------------------------------------------day la js-------------------------------------------------------------------------------------------------->        
 
-        
+        <script src="fb.js"></script>
+        <script src="ep.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
         <!-- Start of Async ProveSource Code --><script>!function(o,i){window.provesrc&&window.console&&console.error&&console.error("ProveSource is included twice in this page."),provesrc=window.provesrc={dq:[],display:function(){this.dq.push(arguments)}},o._provesrcAsyncInit=function(){provesrc.init({apiKey:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI1ZmFiNzBjYTg3MWQzYzVjZTcyMTU1MDEiLCJpYXQiOjE2MDUwNzEwNTB9.GFq19JB4Ut8VdKAV442MnxoPddvU7ENH_pqgBwrmv20",v:"0.0.4"})};var r=i.createElement("script");r.type="text/javascript",r.async=!0,r["ch"+"ar"+"set"]="UTF-8",r.src="https://cdn.provesrc.com/provesrc.js";var e=i.getElementsByTagName("script")[0];e.parentNode.insertBefore(r,e)}(window,document);</script><!-- End of Async ProveSource Code -->
     </head>
     <body>          
 
         <div class="grid-container">
-    <!---------------------------------------------------------day la nav 1-------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------day la nav 1-------------------------------------------------------------------------------------------------->
                     <div class="item1" id="item1">
                         Check out
                     </div>
@@ -33,7 +34,7 @@
                         <span class="glyphicon glyphicon-pencil"></span> Register
                     </div>
                     
-    <!---------------------------------------------------------day la nav 2-------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------day la nav 2-------------------------------------------------------------------------------------------------->
                     <div class="item4" id="grid4">
                         Pascal imitation Jewelry
                     </div>
@@ -89,23 +90,23 @@
                                 <tr>
                                     <td><p>2. Were your expectations met, unmet, or exceeded?</p></td>
                                     <td>
-                                       <input type="radio" name="gender"><span>Met</span>
-                                       <input type="radio" name="gender"><span>Unmet</span>
-                                       <input type="radio" name="gender"><span>Exceeded </span>
+                                       <input type="radio" name="gender1"><span>Met</span>
+                                       <input type="radio" name="gender1"><span>Unmet</span>
+                                       <input type="radio" name="gender1"><span>Exceeded </span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><p>3. Did our employees or customer service staff help you?</p></td>
                                     <td>
-                                        <input type="radio" name="gender"><span>Yes</span>
-                                        <input type="radio" name="gender"><span>No</span>
+                                        <input type="radio" name="gender2"><span>Yes</span>
+                                        <input type="radio" name="gender2"><span>No</span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><p>4. What, if any, products, services, or features are we missing?</p></td>
                                     <td>
-                                        <input type="radio" name="gender"><span>Yes</span>
-                                        <input type="radio" name="gender"><span>No</span>
+                                        <input type="radio" name="gender3"><span>Yes</span>
+                                        <input type="radio" name="gender3"><span>No</span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -117,7 +118,7 @@
                                 <tr>
                                     <td><p>6. Please rate us from 1 to 5 stars</p></td>
                                     <td>
-                                        <div class="stars">
+                                        <!-- <div class="stars">
                                             <form action="">
                                               <input class="star star-5" id="star-5" type="radio" name="star"/>
                                               <label class="star star-5" for="star-5"></label>
@@ -130,7 +131,23 @@
                                               <input class="star star-1" id="star-1" type="radio" name="star"/>
                                               <label class="star star-1" for="star-1"></label>
                                             </form>
-                                          </div>
+                                          </div> -->
+                                          <div id="rating">
+                                            <input type="radio" id="star5" name="rating" value="5" />
+                                            <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                         
+                                            <input type="radio" id="star4" name="rating" value="4" />
+                                            <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                         
+                                            <input type="radio" id="star3" name="rating" value="3" />
+                                            <label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                         
+                                            <input type="radio" id="star2" name="rating" value="2" />
+                                            <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                         
+                                            <input type="radio" id="star1" name="rating" value="1" />
+                                            <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
