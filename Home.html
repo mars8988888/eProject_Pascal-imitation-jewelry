@@ -1,62 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Homepage</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="ep.css" >
-    <link rel="stylesheet" href="ab.css" >
-
-    <script src="ep.js"></script>
-    
+            <title>Homepage</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="ep.css" >
+            <script src="ep.js"></script>
 </head>
 <body>          
 
             <div class="grid-container">
 <!---------------------------------------------------------day la nav 1-------------------------------------------------------------------------------------------------->
-                <div class="item1" id="item1">
-                    Check out
-                </div>
-                <div class="item2" id="item1">
-                    
-                </div>
-                <div class="item3" id="item1">
-                    <span class="glyphicon glyphicon-user"></span> Login 
-                    <span class="glyphicon glyphicon-pencil"></span> Register
+                
+                <div class="nav1 cus-nav1" id="nav1">
+                    <div class="item1" id="item1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><i class="fa fa-facebook fa-1" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-comments"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item2" id="item2">
+                        
+                    </div>
+                    <div class="item3" id="item3">
+                        <a href=""><span class="fa fa-user"></span> Login </a>
+                        <a href=""><span class="fa fa-pencil"></span> Register</a>
+    
+                    </div>
                 </div>
                 
+                
 <!---------------------------------------------------------day la nav 2-------------------------------------------------------------------------------------------------->
-                <div class="item4" id="grid4">
-                    Pascal imitation Jewelry
-                </div>
-                <div class="item5">
-                    <div>
-                            <input type="search" name="search" id="" placeholder="Search Anything Here...">
-                            <span class="glyphicon glyphicon-search"></span>
+                <div class="nav2" id="nav2">
+                    <div class="item4" id="item4">
+                        <p>Pascal imitation Jewelry</p>
+                        <!-- <img src="image/Classy Geometric Jewelry Logo.png"> -->
                     </div>
-                               
+                    <div class="item5" id="item5">
+                        <!-- <div>
+                            <input id="search" class="searchTerm" type="text" name="q" value="" placeholder="Search entire store here..." class="input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off"> 
+                            <button type="submit" class="searchButton">
+                                <i class="fa fa-search"></i>
+                             </button>
+                        </div> -->
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for products.." title="Type in a name">
+
+                        <ul id="myUL">
+                          <li><a href="#">Daimond</a></li>
+                          <li><a href="#">Rings for wedding</a></li>
                         
+                          <li><a href="#">Necklace for my grandma</a></li>
+                          <li><a href="#">No money for jewelry...</a></li>
+                        
+                          <li><a href="#">Oh My god ! so beautiful</a></li>
+                          <li><a href="#">need money for ring</a></li>
+                          <li><a href="#">where is my girlfriend</a></li>
+                        </ul>  
+                            
+                    </div>
+
+                    <div class="item6" id="item6">
+
+                        <a href=""><span class="fa fa-shopping-cart"></span> Your Car</a>
+                    </div>
+                    <div class="item6b" id="item6b">
+
+                        <span class="fa fa-phone"></span>0987236232
+                    </div>   
+                    
                 </div>
-                <div class="item6">
-                    <span class="glyphicon glyphicon-shopping-cart"></span> Your Car
-                    <span class="glyphicon glyphicon-earphone"></span> 0987236232
-                </div>
+                
 <!---------------------------------------------------------day la nav 3-------------------------------------------------------------------------------------------------->
-                <div class="item7" id="grid7">
-                    <nav>
+                <div class="item7 cus-item7" id="grid7">
+                   
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home page</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Our Jewelry</a></li>
+                                        <li><a href="#">Our Jewelry</a></li>
+                  
+                                    </ul>
+                                </li>
+                                <li><a href="#">Products</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Our Jewelry</a></li>
+                                        <li><a href="#">Our Jewelry</a></li>
+                  
+                                    </ul>
+                                </li>
+                                <li><a href="#">Gallery</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Our Jewelry</a></li>
+                                        <li><a href="#">Our Jewelry</a></li>
+                  
+                                    </ul>
+                                </li>
+                                <li><a href="#">About us</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Our Jewelry</a></li>
+                                        <li><a href="#">Our Jewelry</a></li>
+                  
+                                    </ul>
+                                </li>
+                                <li><a href="#">Contacts</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Our Jewelry</a></li>
+                                        <li><a href="#">Our Jewelry</a></li>
+                  
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </nav>
+                    
+                    <!-- <div class="layer2">
                         <ul>
-                            <li><a href="#">Home page</a></li>
-                            <li><a href="#">Products</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Contacts</a></li>
+                            <li><a href="">Our Jewelry</a></li>
+                            <li><a href="">Our Service</a></li>
                             
                         </ul>
-                    </nav>
+                    </div> -->
                 </div>
 <!---------------------------------------------------------day la BODY -------------------------------------------------------------------------------------------------->
                 <div class="item8" id="grid8">
@@ -99,33 +169,103 @@
 
                 </div>
 <!---------------------------------------------------------day la body 2-------------------------------------------------------------------------------------------------->              
-                <div class="item9" id="item9">9</div>
+                <div class="item9  item9-cus" id="item9">
+                    <div class="app_sec">
+                        <div class="page-main">
+                            <div class="appsecrow">
+                                <div class="appseccol">
+                                    <div class="appsecwrap">
+                                        <a href="https://www.diamondstory.com.au/premade-jewellery-search">
+                                            <img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/appointment-icon.jpg" alt="Appointment Diamond Story">
+                                        </a>
+                                        <h4><a href="https://www.diamondstory.com.au/inventory-links#/"></a><a href="https://www.diamondstory.com.au/inventory-links#/">Search Natural Diamonds</a></h4>
+                                        
+                                        <span>Customize you ring with our Experts</span>
+    
+                                    </div>
+                                </div>
+                                <div class="appseccol">
+                                    <div class="appsecwrap">
+                                        <a href="https://www.diamondstory.com.au/premade-jewellery-search">
+                                            <img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/appointment-icon.jpg" alt="Appointment Diamond Story">
+                                        </a>
+                                        <h4><a href="https://www.diamondstory.com.au/inventory-links#/"></a><a href="https://www.diamondstory.com.au/inventory-links#/">PREMADE JEWELRY</a></h4>
+                                        
+                                        
+    
+                                    </div>
+                                </div>
+                                <div class="appseccol">
+                                    <div class="appsecwrap">
+                                        <a href="https://www.diamondstory.com.au/premade-jewellery-search">
+                                            <img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/appointment-icon.jpg" alt="Appointment Diamond Story">
+                                        </a>
+                                        <h4><a href="https://www.diamondstory.com.au/premade-jewellery-search">MAKE AN APPOINTMENT TODAY</a></h4>
+                                        
+                                        <span>Customize you ring with our Experts</span>
+    
+                                    </div>
+                                </div>
+                                <div class="appseccol">
+                                    <div class="appsecwrap">
+                                        <a href="https://www.diamondstory.com.au/premade-jewellery-search">
+                                            <img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/appointment-icon.jpg" alt="Appointment Diamond Story">
+                                        </a>
+                                        <h4><a href="https://www.diamondstory.com.au/inventory-links#/"></a><a href="https://www.diamondstory.com.au/inventory-links#/">SEARCH LAB GROWN DIAMONDS</a></h4>
+                                        
+                                        <span>Learn about lab grown Diamonds</span>
+    
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
 <!---------------------------------------------------------day la body 3-------------------------------------------------------------------------------------------------->
-                <div class="item10">
+                <div class="item10 ">
                     <img src="image/about_us_pic.jpg">
                 </div>
-                <div class="item11">
-                    <h3> ABOUT DIAMOND STORY</h3>
-                    <p>DIAMOND STORY IS THE NEW PLACE TO SOURCE AND BUY DIAMONDS!
-
-                        With offices in Melbourne and Hong Kong with another to open in Singapore in 2020 we truly are an international company dedicated to sourcing the best value stones! Our Hong Kong office allows us to get even better pricing from our suppliers which we pass on to you!
-
-                        With more than a dozen years in the industry you can be assured that you get the best prices, advice and workmanship at Diamond Story!</p>
+                <div class="item11 aboutsection">
+                    <h2 class="font2 page-title4">
+                        <span>   
+                        ABOUT DIAMOND STORY
+                        </span>
+                    </h2>
+            
+                    <h3 class="font2" style="text-transform: uppercase;">Diamond Story is the new place to source and buy diamonds!</h3>
+                    <p>With offices in Melbourne and Hong Kong with another to open in 
+                        Singapore in 2020 <br> we truly are an international company dedicated to 
+                        sourcing the best value stones! Our Hong Kong office allows us to get 
+                        even better pricing from our suppliers which we pass on to you!</p>
+                    <p>With more than a dozen years in the industry you can be assured that you get the best prices, advice and workmanship at Diamond Story!</p>  
+                    <br>
+                    <a class="btn" href="http://diamondstory.com.au/about-us/">View More</a>
                 </div>
 <!---------------------------------------------------------day la body 4-------------------------------------------------------------------------------------------------->
                 <div class="item12">
                     <img src="image/buildownring.JPG"> 
                 </div>
 <!---------------------------------------------------------day la body 5-------------------------------------------------------------------------------------------------->
-                <div class="item13">
-                    <img src="image/SERVICING_AND_REPAIRS.png">
+                <div class="adbannercolumn">
+                    <div class="item13">
+                        <a href="https://www.diamondstory.com.au/servicing-and-cleaning"><img src="https://www.diamondstory.com.au/pub/media/wysiwyg/SERVICING_AND_REPAIRS.png" alt="Diamond Servicing &amp; Repairs Melbourne"></a>
+                    </div>
+                    <div class="item14">
+                        <a href="https://www.diamondstory.com.au/diamond-ring-resizing"><img src="https://www.diamondstory.com.au/pub/media/wysiwyg/Servicing-resize.png" alt="Diamond Resizing"></a>
+                    </div>
+                    <div class="item15">
+                        <a href="https://www.diamondstory.com.au/polishing-and-plating"><img src="https://www.diamondstory.com.au/pub/media/wysiwyg/polishing.png" alt="Diamond Polishing &amp; Plating"></a>
+                    </div>
+                </div>
+                <!-- <div class="item13">
+                    <a href="https://www.diamondstory.com.au/servicing-and-cleaning"><img src="https://www.diamondstory.com.au/pub/media/wysiwyg/SERVICING_AND_REPAIRS.png" alt="Diamond Servicing &amp; Repairs Melbourne"></a>
                 </div>
                 <div class="item14">
-                    <img src="image/Servicing-resize.png">
+                    <a href="https://www.diamondstory.com.au/diamond-ring-resizing"><img src="https://www.diamondstory.com.au/pub/media/wysiwyg/Servicing-resize.png" alt="Diamond Resizing"></a>
                 </div>
                 <div class="item15">
-                    <img src="image/polishing.png">
-                </div>
+                    <a href="https://www.diamondstory.com.au/polishing-and-plating"><img src="https://www.diamondstory.com.au/pub/media/wysiwyg/polishing.png" alt="Diamond Polishing &amp; Plating"></a>
+                </div> -->
 <!---------------------------------------------------------day la body 6-------------------------------------------------------------------------------------------------->
                 <div class="item16">
                     <h1>FINE JEWELRY</h1>
@@ -135,9 +275,38 @@
                 </div>
                 <div class="item17">
                     <h1>OUR PROMISE</h1>
+                    <ul class="promissconlist">
+                        <li>
+                            <a href=""><img src="http://diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/best-price.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="http://diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/alumni-member.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="http://diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/satisfaction.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="http://diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/return-policy.png" alt=""></a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="item18">
-                    LOGO SUPPORT
+                <div class="item18" id="item18">
+                    <div class="footer_logoes">
+                        <ul>
+                            <li><img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/gia.jpg" alt=""></li>
+                            <li><img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/gia-alumini.jpg" alt=""></li>
+                            <li><img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/jaa-member.jpg" alt=""></li>
+                            <li><img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/canada-mark.png" alt=""></li>
+                            <li><img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/hrd-antwerp.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="footer_logoes1">
+                        <ul>
+                            <li><img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/BBA-Listing.png" alt="BBA Listing" style="width: 80px;"></li>
+                            <li><img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/PWA-Listing.png" alt="PWA Listing" style="width: 80px;"></li>
+                        </ul>
+                       
+                    </div> 
                 </div>
                 <div class="item19">
                     lINK AND INFO
