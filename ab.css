@@ -1,0 +1,61 @@
+*{
+    
+    box-sizing: border-box;
+    
+        
+} 
+
+
+/* -------------------------------------------------------Phan chinh item30------------------------------------------------------------------------------------------------------ */
+.item30 {
+    grid-column: 1 / span 6;
+}
+#item30 {
+    border: 1px solid black;
+}
+#item30 h1 {
+    text-align: left;
+    font: bold 60px arial;
+}
+/* -------------------------------------------------------Phan chinh item31------------------------------------------------------------------------------------------------------ */
+.item31 {
+    grid-column: 1 / span 3;
+}
+#item31 {
+    width: 50;
+}
+
+/* -------------------------------------------------------Phan chinh item32------------------------------------------------------------------------------------------------------ */
+.item32 {
+    grid-column: 4 / span 3;
+}
+#item32 {
+    text-align: justify;
+    border: 1px solid #fffcf5;
+    width: 90%;
+    margin-left: 50px;
+    border-radius: 10px;
+    
+}
+#item32 h1 {
+    text-align: left;
+    font: bold 40px arial;
+
+}
+#item32 h1:hover {
+    padding: 10px;
+    width: fit-content;
+    background-color: #feeecb;
+    border: 1px solid #feeecb;
+    box-shadow: 20px 20px 8px #888888;
+    cursor: pointer;
+    border-radius: 7px;
+}
+#item32 h3 {
+    text-align: left;
+    font: bold 30px/50px  arial;
+}
+#item32 p,li {
+    text-align: left;
+    font: 30px/50px  arial;
+}
