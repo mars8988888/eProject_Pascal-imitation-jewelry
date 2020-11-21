@@ -692,10 +692,12 @@ user agent stylesheet
 
 .item19 {
     grid-column: 1 / span 6;
-    border-top: 10px solid black;
+    border-top: 1px solid black;
     
 }
 #item19 {
     background-color: black;
     color: white;
+    font: 15px arial;
+    
 }
