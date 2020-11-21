@@ -1,7 +1,9 @@
 *{
     box-sizing: border-box;
     z-index: auto;
+    width: 100;
 }
+
 head, body{
     width: 100%;
     background-color: #ddb65a;
