@@ -11,6 +11,7 @@ head, body{
     display: grid;
     grid-template-columns: 16.66% 16.66% 16.66%  16.66%  16.66%  16.66% ;
     width: 100%;
+    padding: 10px;
     justify-content: center;
     padding: 0px;
     
@@ -23,6 +24,7 @@ head, body{
     font-size: 30px;
     text-align: center;
     position: relative;
+
 }
 .nav1 {
     grid-column: 1 / span 6;
@@ -269,104 +271,196 @@ head, body{
 /* ----------------------------------------------------------------------day la nav 3------------------------------------------------------------------------------------ */
 .item7 {
     grid-column: 1 / span 6;
-    height: 200px;
+    height: 100px;
+    border: 1px solid purple;
    
 }
 
-.item7 nav {
-    display: block;
-    background-color:white;
+.item7 > nav {
 
+    border: 1px solid black ;
+    width: 100%;
+    height: 100%;
+  
+    /* z-index: 2; */
    
 }
-.item7 nav ul {
-    /* border: 1px solid black; */
+.item7 > nav > ul{
+ 
     list-style-type: none;
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+
+}
+
+.item7 >  nav > ul > li{
+    
+    /* position: relative; */
+    border: 1px solid rgb(41, 112, 124);
+    width: 100%;
+    height: 100%;
+    /* justify-content: center; */
     display: flex;
 }
-
-
-.item7  nav ul li {
-    margin-top: 2px;
-    justify-content: space-between;
+._1item{
     position: relative;
-    display: inline-block;
-}
-
-
-/* sua */
-.item7 nav ul li a{
-    color:black;
-    display: block;
-    /* padding:11px 16px; */
-    font-size: 15px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    margin-left: 100px;
-  
-}
-.item7 nav > ul > li  ul.sub-menu{
+    display: inline;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;  
+    justify-content: space-between;
+    margin-top: 5px;
     
-    top: 40;left: 0;
-    margin-left: 50px;
-    display: inline;    
+}
+._1item a.layer1 {
+    
+    position: relative;
+    color:rgb(221, 191, 22);
+    padding:0 20px;
+    text-decoration: none;
+    text-align: left;
+    border:1px solid pink;
+   
+    
+}  
+._1item .layer2{
+    /* top: 40px;left: -30px; */
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    border:1px solid rgb(168, 166, 166);
+    height: auto;
+    width: 120%;
+    z-index: 2;
+    text-align: left;
+    
+   
+}
+._1item .layer2 ul{
+    text-decoration: none;
+    list-style: none;
+  
+}   
+._1item .layer2 ul li a{
+    
+    text-decoration: none;
+    display: inline-block;
+    /* padding: 5px 10px; */
+    /* border-bottom: 1px solid black; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+._1item:hover .layer2{
+    visibility: visible;
+    opacity: 1;
+   
+    /* left: -20px; */
+}
+
+._1item .layer2:hover ul li{
+    color: #9f7717;
+    opacity: 1;
+
+
+}
+._1item .layer2 ul li:hover a{
+    color: #9f7717;
+    transition: 0.5s;
+    
+
+}
+/* sua */
+/* .item7 nav > ul > li > a{
+  
+    border: 1px solid orange    ;
+    color:#d7a627;
+    display: block;
+ 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    font-size: 30px;
+    list-style-type: none;
+  
+   
+   
+}
+.item7 nav > ul > li > ul.sub-menu{
+
+  
+    margin-left: 0px;
     position: absolute;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
-    width: 200px;
-    background-color: aquamarine;
-    border:1px solid rgb(168, 166, 166);
-}
-/* .item7 nav > ul > li  ul.sub-menu li{
-    
-  
-} */
-.item7 nav > ul > li  ul.sub-menu li a{
-    display: block;
-    text-decoration: none;
-    
-}
-.item7 nav > ul > li:hover ul.sub-menu{
-    visibility: visible;
-    opacity: 1;
-    display: block;
+    width: 500px;
+    background-color:whitesmoke;
+    padding-left: 0px;
+    padding-top: 0px;
+    border:1px solid rgb(166, 168, 167);
+    font-size: 15px;
+    z-index: 2;
+    line-height: 300%;
+    margin-left: 0px ;
+    list-style-type: none;
 }
 
-.item7 .sub-menu{
-    display: inline;
-}
-.item7 .sub-menu ul li{
+.item7 nav > ul > li  ul.sub-menu li{
     display: block;
-    list-style: none;
+    text-align: left;
+  
+
     
 }
-.item7 .sub-menu ul li a{
+.item7 nav > ul > li  ul.sub-menu li a{
+    display:block;
+    width:auto;
+    height: auto;
     text-decoration: none;
-    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
 }
-.item7 nav ul li a:hover{
-    /* border: 1px solid black; */
+.item7 nav > ul > li:hover ul.sub-menu{
+    transition: 1s;
+    visibility: visible;
+    opacity: 1;
+    list-style-type: none;
+ 
+}
+
+
+.item7 nav > ul > li:hover ul.sub-menu ul li a{
+
+    text-decoration: none;
+    color: #d7a627;
+}
+.sub-menu a:hover{
+
     transition: 0.4;
-    color: pink;
-    /* background-color:slategray; */
-}
+    color:black;
+
+} */
 
 
 /* ----------------------------------------------------------------------Body------------------------------------------------------------------------------------ */
-#grid8 {
+.item8 {
     grid-column: 1 / span 6;
+  
+}
+.item8 .container{
 
+    z-index: -1;
 }
 /* ----------------------------------------------------------------------Body 2------------------------------------------------------------------------------------ */
 .item9{
     grid-column: 1 / span 6;
     background-color: grey;
 }
-/* .item9-cus{
- 
-    background-color: grey;
-} */
+
 #item9 {
  
     height: 300px;
@@ -723,3 +817,154 @@ user agent stylesheet
 .item19 {
     grid-column: 1 / span 6;
 }
+#item19{
+    background-color:black;
+}
+.copyright {
+    background: #000;
+    color: #fff;
+    /* text-align: left; */
+    padding: 15px 0;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.copyright .copyrightcol {
+    text-align: center;
+    font-size: 14px;
+    color: #b5b5b5;
+    padding-top:5px;
+    font-size: 15px;
+    /* border: 1px solid pink; */
+}
+
+.page-main {
+    width: 100%;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    -webkit-flex-basis: auto;
+    flex-basis: auto;
+}
+.copyright .copy_cols {
+    width: 33.33%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    
+}
+.copyright .footer_payments img{
+    width: 70%;
+    height: 70%;
+}
+.copyright {
+    background: #000;
+    color: #fff;
+    /* text-align: left; */
+    padding: 15px 0;
+    overflow: hidden;
+   
+}
+
+.MuiButton-textPrimary {
+    color: #7ed321;
+}
+
+.MuiButton-text {
+    padding: 6px 8px;
+}
+
+.MuiButton-root {
+    color: #fff;
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: none;
+    font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: #7ed321;
+}
+
+.MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.MuiTouchRipple-root {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.MuiButton-textPrimary {
+    color: #7ed321;
+}
+
+.MuiButton-root {
+    color: #fff;
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: none;
+    font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: #7ed321;
+}
+
+.MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.mes{
+    width: 10%;
+    height: 200px;
+}
+
