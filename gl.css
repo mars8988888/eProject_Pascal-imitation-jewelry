@@ -59,4 +59,9 @@
 }
 #Jewelry > table > tr, td {
     border: 1px solid black;
+    width: 25%;
+}
+#Jewelry > img {
+    width: 100%;
+    
 }
