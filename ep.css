@@ -13,6 +13,7 @@ head, body{
 
     
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: 16.66% 16.66% 16.66%  16.66%  16.66%  16.66% ;
@@ -40,9 +41,10 @@ head, body{
 } 
 
 #nav1 {
-   padding: 0px;
-
-    
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }   
 
 .nav1 .item1 {
@@ -94,6 +96,7 @@ head, body{
 #nav2 {
     background: rgb(255,149,0);
     background: linear-gradient(90deg, rgba(255,149,0,1) 0%, rgba(221,182,90,1) 100%);
+    
 }
 .nav2 .item4 {
     /* grid-column: 1 / span 2; */
