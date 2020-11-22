@@ -31,6 +31,7 @@
 #item32 {
     text-align: justify;
     width: 100%;
+    padding-top: 0px;
     
 }
 #item32 h1 {
@@ -39,10 +40,10 @@
     padding: 10px;
     width: fit-content;
     background-color: #feeecb;
-    border: 1px solid black;
     box-shadow: 5px 5px 10px 5px #888888;
     cursor: pointer;
     border-radius: 7px;
+    margin-top: 0px;
 }
 
 #item32 h3 {
