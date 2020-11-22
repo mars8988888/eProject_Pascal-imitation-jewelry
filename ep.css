@@ -264,7 +264,7 @@ head, body{
     padding:0 20px;
     text-align: left;
     font:bold 15px arial;
-    
+    text-decoration: none;
 }  
 ._1item .layer2{
     position: relative;
