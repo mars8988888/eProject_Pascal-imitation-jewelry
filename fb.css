@@ -15,7 +15,7 @@
     
 }
 #item33 h1{
-    font: bold 40px arial;
+    font: bold 40px times;
 }
 /* --------------------------------------------------------------------item 34------------------------------------------------------------------------------------------------ */
 .item34 {
@@ -212,3 +212,22 @@ line-height:1;
 }
 .review-stars ul li i.inactive { color: #c6c6c6;}
 .star:after { content: "\2605"; }
+
+
+
+.item19 {
+    grid-column: 1 / span 6;
+    border-top: 1px solid black;
+    padding-left: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#item19 {
+    background-color: black;
+    color: white;
+    font: 15px arial;
+}
+.item19 img {
+    width: 250px;
+    margin-left: 100px;
+}

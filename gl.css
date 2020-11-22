@@ -1,9 +1,10 @@
 .item40 {
     float: left;
-    border: 1px solid #ccc;
+    /* border: 1px solid #bb7f06; */
     background-color: #f1f1f1;
     width: 100%;
     height: auto;
+    border-left: none;
     
 }
   
@@ -49,10 +50,11 @@
     
 }
 .item41 {
-    border: 1px solid black;
+    /* border: 1px solid #bb7f06; */
     grid-column: 2 / span 5;
     margin-bottom: 100px;
     height: 100%;
+    border-left: 1px solid #bb7f06;
 }
 
 /* ----------------------------------------------------------gallery------------------------------------------------*/
