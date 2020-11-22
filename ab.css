@@ -1,61 +1,65 @@
-*{
-    
-    box-sizing: border-box;
-    
-        
-} 
-
 
 /* -------------------------------------------------------Phan chinh item30------------------------------------------------------------------------------------------------------ */
 .item30 {
     grid-column: 1 / span 6;
 }
-#item30 {
-    border: 1px solid black;
-}
+
 #item30 h1 {
     text-align: left;
-    font: bold 60px arial;
+    font: bold 40px times;
 }
 /* -------------------------------------------------------Phan chinh item31------------------------------------------------------------------------------------------------------ */
 .item31 {
     grid-column: 1 / span 3;
+    border-right: 1px solid #bb7f06;
 }
 #item31 {
-    width: 50;
+    width: 100%;
+    background-color: black;
 }
-
+.item31 img {
+    width: 100%;
+}
+#item31 p {
+    font-weight: bold;
+    color: white;
+}
 /* -------------------------------------------------------Phan chinh item32------------------------------------------------------------------------------------------------------ */
 .item32 {
     grid-column: 4 / span 3;
 }
 #item32 {
     text-align: justify;
-    border: 1px solid #fffcf5;
-    width: 90%;
-    margin-left: 50px;
-    border-radius: 10px;
+    width: 100%;
+    padding-top: 0px;
     
 }
 #item32 h1 {
     text-align: left;
-    font: bold 40px arial;
-
-}
-#item32 h1:hover {
+    font: bold 40px times;
     padding: 10px;
     width: fit-content;
     background-color: #feeecb;
-    border: 1px solid #feeecb;
-    box-shadow: 20px 20px 8px #888888;
+    box-shadow: 5px 5px 10px 5px #888888;
     cursor: pointer;
     border-radius: 7px;
+    margin-top: 0px;
 }
+
 #item32 h3 {
     text-align: left;
-    font: bold 30px/50px  arial;
+    font: bold 30px/50px  times;
 }
-#item32 p,li {
+#item32 li {
     text-align: left;
-    font: 30px/50px  arial;
+    font: 20px/50px  times;
+}
+#item32 p {
+    font: 20px times;
+    line-height: 50px;
+}
+
+
+#item18 {
+    border-top: 1px solid #bb7f06;
 }
