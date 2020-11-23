@@ -560,7 +560,7 @@ a:-webkit-any-link {
     grid-column: 1 / span 6;
 }
 #item18 {
-    /* background-color: green; */
+    background-color:rgba(221,182,90,1);
     padding: 20px ;
 }
 .item18 .footer_logoes{
@@ -691,6 +691,10 @@ user agent stylesheet
     outline: none;
     border-radius: 2px;
     width: 600px;
+    background-color: url(./image/mail.png);
+    background-position:top left;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 #item100 h1 {
     font-family: 15px;
