@@ -6,28 +6,31 @@
         transform: rotateY(180deg);    
         opacity: 0.5;
     } */
-  #cover{
-      margin:0 auto;
-      width: fit-content;
+    #cover{     /*Style Div cover bao bên ngoài phần Product Cards */
+      width: fit-content;   /*Để fit-content sẽ ko cần phải chỉnh nữa, nội dung sao nó sẽ responsive theo như vậy*/
       height: fit-content;
+      margin-left: 40%;
       margin-top:15px;    /*margin: canh distance từ border ra bên ngoài*/
-      padding-top:5%;    /*padding: canh distance từ border vào inside*/
-      padding-right:5% ;
+      margin-bottom:15px;
+      padding-top:2%;    /*padding: canh distance từ border vào inside*/
+      padding-left:50% ;
+      /* padding-right:1% ; */
       border-left:3px solid rgba(183,183,183,1.00);
       border-right: 3px solid rgba(183,183,183,1.00);
       border-radius:20px;   /*hiệu ứng bo cạnh*/
-    }
-  
-    
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      background-color: none; /*rgba(245, 245, 220, 0.247)*/
+      /* text-align: center; */
+    }  
   .card {		/*style của ô <div> lớn ngoài cùng*/
         position: relative; /*chưa hiểu cái này lắm? Chỉ có bên trái of giữa thôi???*/
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         width: 250px;   /*phân biệt max width/height vs width/height nhé! Lưu ý Property 'fit-content' */
         height: 350px;   
-        margin: auto;
+        /* margin: auto; */
         text-align: center;
         font-family: arial;
-        background-color:none;
+        background-color:white;
   }
 
   .image {	/*cho hình nền*/
@@ -39,8 +42,16 @@
     /* backface-visibility: hidden; */
   }
 
+  .catergory{
+    text-align:left;
+    color: rgb(136, 138, 41);
+  }
+
   .name{
     font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 7%;
+    margin-right: 7%;
   }
 
   .price {    /*style của Price*/
@@ -170,7 +181,7 @@
     
     /* Float four columns side by side - Làm nổi bốn cột cạnh nhau*/
     .column {
-      float: right; /*Canh lề trái-phải*/
+      float: left; /*Canh lề trái-phải*/
       width: fit-content; /*fit-content nên sẽ tự điều chỉnh theo size của .card*/
       height: fit-content;
       padding: 0 5px;   /*2nd: khoảng cách giữa các card columns*/
@@ -196,3 +207,18 @@
       }
     }
      /*------------Responsive Column Cards------------*/
+
+     
+     /*hình tròn chỗ biến Cart - Badges*/
+.dot {
+  height: fit-content;     /*size của background block*/
+  width: fit-content;
+  background-color: rgba(212, 98, 21, 0.582);
+  border-radius: 50%;   /*đây chính là chỗ chỉnh cho background thành hình tròn*/
+  display: inline-block;       /*inline-block: mấy cái dot sẽ xếp theo 1 hàng ngang*/
+  padding-top: 0.5%;  /*canh text so vs lề border trên cùng của background*/
+  padding-left: 4%;
+  padding-right: 4%;
+  text-align:center;    /*Canh text ngay giữa background*/
+  color: white;
+}
