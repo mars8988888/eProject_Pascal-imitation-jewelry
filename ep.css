@@ -585,6 +585,7 @@ a:-webkit-any-link {
 #item18 {
     background-color:rgba(221,182,90,1);
     padding: 20px ;
+    height: fit-content;
 }
 .item18 .footer_logoes{
     width: 100%;
@@ -595,6 +596,7 @@ a:-webkit-any-link {
 
 .footer_logoes ul{
    width: 100%;
+ 
     margin-left: 100px;
     display: inline-flex;
     margin-left: 0px;
@@ -640,6 +642,7 @@ user agent stylesheet
 .footer_logoes1
 {
     width: 100%;
+    height: fit-content;
     display: flex;
     margin-left: 10px;
     align-items: center;
@@ -647,14 +650,13 @@ user agent stylesheet
     list-style: none;
     margin: 0;
     padding: 0;
-    
+    /* border: 1px solid red; */
 }
 
 .footer_logoes1 ul{
    
     margin-left: 100px;
     display: flex;
-   
     margin-left: 0px;
 }
 .footer_logoes1 ul li{

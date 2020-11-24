@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <title>Products</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="ep.css" >
+            <link rel="stylesheet" href="myHover1.css">
+            <script src="ep.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>    <!--Để dùng lệnh đếm cho Add to Cart--> 
+            <script>
+                $(document).ready(function (){
+                  var myPagination = $(".pagination li");
+                  myPagination.click(function() {
+                      myPagination.removeClass("active");
+                      $(this).addClass("active");
+                  });          
+                });
+            </script>  
+</head>
+<body ng-app="">          
+
+            <div class="grid-container">    <!--Div bao cả web page, end ở cuối body-->
+<!---------------------------------------------------------day la nav 1-------------------------------------------------------------------------------------------------->
+                
+                <div class="nav1 cus-nav1" id="nav1">
+                    <div class="item1" id="item1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><i class="fa fa-facebook fa-1" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-comments"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="item2" id="item2">
+                        
+                    </div>
+                    <div class="item3" id="item3">
+                        <a href=""><span class="fa fa-user"></span> Login </a>
+                        <a href=""><span class="fa fa-pencil"></span> Register</a>
+    
+                    </div>
+                </div>
+                
+                
+<!---------------------------------------------------------day la nav 2-------------------------------------------------------------------------------------------------->
+                <div class="nav2" id="nav2">
+                    <div class="item4" id="item4">
+                        <p>Pascal imitation Jewelry</p>
+                        <!-- <img src="image/Classy Geometric Jewelry Logo.png"> -->
+                    </div>
+                    <div class="item5" id="item5">
+                        <!-- <div>
+                            <input id="search" class="searchTerm" type="text" name="q" value="" placeholder="Search entire store here..." class="input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off"> 
+                            <button type="submit" class="searchButton">
+                                <i class="fa fa-search"></i>
+                             </button>
+                        </div> -->
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for products.." title="Type in a name">
+
+                        <ul id="myUL">
+                          <li><a href="#">Daimond</a></li>
+                          <li><a href="#">Rings for wedding</a></li>                       
+                          <li><a href="#">Necklace for my grandma</a></li>
+                          <li><a href="#">No money for jewelry...</a></li>                      
+                          <li><a href="#">Oh My god ! so beautiful</a></li>
+                          <li><a href="#">need money for ring</a></li>
+                          <li><a href="#">where is my girlfriend</a></li>
+                        </ul>                           
+                    </div>
+
+                    <div class="item6" id="item6">
+                        <a href=""><span class="fa fa-shopping-cart"></span> Your Cart</a>
+                        <a href="#"><span class="dot">{{count}}</span>
+                    </div>
+                    <div class="item6b" id="item6b">
+                        <a href="#"><span class="fa fa-phone"></span>0987236232</a> 
+                    </div>   
+                    
+                </div>
+                
+<!---------------------------------------------------------day la nav 3-------------------------------------------------------------------------------------------------->
+                <div class="item7" id="item7">
+                   
+                        <nav>
+                            <ul>
+                                <li>
+                                    <div class="_1item">
+                                        <a href="#" class="layer1">Home page</a>
+                                        <div class="layer2">
+                                            <ul>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                            </ul>
+                                        </div>   
+                                    </div>    
+                                    <div class="_1item">
+                                        <a href="#" class="layer1">Home page</a>
+                                        <div class="layer2">
+                                            <ul>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                            </ul>
+                                        </div>   
+                                    </div>    
+                                    <div class="_1item">
+                                        <a href="#" class="layer1">Home page</a>
+                                        <div class="layer2">
+                                            <ul>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                            </ul>
+                                        </div>   
+                                    </div>    
+                                    <div class="_1item">
+                                        <a href="#" class="layer1">Home page</a>
+                                        <div class="layer2">
+                                            <ul>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                            </ul>
+                                        </div>   
+                                    </div>    
+                                    <div class="_1item">
+                                        <a href="#" class="layer1">Home page</a>
+                                        <div class="layer2">
+                                            <ul>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                                <li><a href="#">Our Jewelry</a></li>
+                                            </ul>
+                                        </div>   
+                                    </div>    
+                                    
+                                <!-- </li>
+                                <li><a href="#">Products</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Our Jewelry</a></li>
+                                        <li><a href="#">Our Jewelry</a></li>
+                  
+                                    </ul>
+                                </li>
+                                <li><a href="#">Gallery</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Our Jewelry</a></li>
+                                        <li><a href="#">Our Jewelry</a></li>
+                  
+                                    </ul>
+                                </li>
+                                <li><a href="#">About us</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Our Jewelry</a></li>
+                                        <li><a href="#">Our Jewelry</a></li>
+                  
+                                    </ul>
+                                </li>
+                                <li><a href="#">Contacts</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Our Jewelry</a></li>
+                                        <li><a href="#">Our Jewelry</a></li>
+                  
+                                    </ul> -->
+                                </li> 
+                                
+                            </ul> 
+                        </nav>
+                    
+                    <!-- <div class="layer2">
+                        <ul>
+                            <li><a href="">Our Jewelry</a></li>
+                            <li><a href="">Our Service</a></li>
+                            
+                        </ul>
+                    </div> -->
+                </div>
+<!---------------------------------------------------------day la BODY (-------------------------------------------------------------------------------------------------->
+<div id="cover">
+    <!--Ring section-->
+  <h1 style="text-align:center; margin-right:11%;">ORIGINAL</h1>    <!--Inline độ ưu tiên là cao nhất-->
+  <hr style="height:2px; border-width:1px; color:black; background-color:grey;width:88%;text-align:left;margin-left:0">
+  <div class="catergory"><h2>RINGS</h2></div> 
+  <!--<p>short description</p>-->
+  
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <div> <!-- class="myEffect"-->
+          <img src="imgs/ring.jpg"  alt="ring" class="image" title="Diamond ring" style="width:100%">
+        </div>
+  
+        <div class="name"><b style="font-size:12px;">PETITE HALO SOLITAIRE RING</b></div>
+        <div class="price"><p class="price">$19.99</p></div>
+                              
+        <div class="overlay">     <!-- style="padding:20px"-->                        
+          <div class="row1">             <!--cái border/outline của dòng ADD TO CART sẽ change khi ta edit size của .overlay-->
+              <div class="text">
+                  <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                  <div id="textCart" class="column1 middle1" title="Add to cart" ng-click="count = count + 1" ng-init="count=0"><b>Add to cart</b> </div>
+                  <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+              </div>  
+          </div>
+              
+          <div id="textContent">
+                  Available in polished finish.
+                  Also available in 18K yellow gold and platinum.   <br>    
+                  Contact us for prices for different material choice, different finish and different width.
+                  <div id="ViewMore">
+                     <p><b>View More</b></p>  <!--Nếu bỏ vào thẻ <div> riêng thì nó sẽ tự xuống dòng nên phải thêm #ViewMore{display: inline;}-->
+                  </div>                   
+          </div>         
+        </div>	
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <div> 
+          <img src="imgs/ring.jpg"  alt="ring" class="image" title="Diamond ring" style="width:100%">
+        </div>
+  
+        <div class="name"><b style="font-size:12px;">PETITE HALO SOLITAIRE RING</b></div>
+        <div class="price"><p class="price">$19.99</p></div>
+                              
+        <div class="overlay">                           
+          <div class="row1">             
+              <div class="text">
+                  <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                  <div id="textCart" class="column1 middle1" title="Add to cart" ng-click="count = count + 1" ng-init="count=0"><b>Add to cart</b> </div>
+                  <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+              </div>  
+          </div>
+              
+          <div id="textContent">
+                  Available in polished finish.
+                  Also available in 18K yellow gold and platinum.   <br>    
+                  Contact us for prices for different material choice, different finish and different width.
+                  <div id="ViewMore">
+                     <p><b>View More</b></p>  
+                  </div>                   
+          </div>         
+        </div>	
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <div> 
+          <img src="imgs/ring.jpg"  alt="ring" class="image" title="Diamond ring" style="width:100%">
+        </div>
+  
+        <div class="name"><b style="font-size:12px;">PETITE HALO SOLITAIRE RING</b></div>
+        <div class="price"><p class="price">$19.99</p></div>
+                              
+        <div class="overlay">                           
+          <div class="row1">             
+              <div class="text">
+                  <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                  <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                  <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+              </div>  
+          </div>
+              
+          <div id="textContent">
+                  Available in polished finish.
+                  Also available in 18K yellow gold and platinum.   <br>    
+                  Contact us for prices for different material choice, different finish and different width.
+                  <div id="ViewMore">
+                     <p><b>View More</b></p>  
+                  </div>                   
+          </div>         
+        </div>	
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <div> 
+          <img src="imgs/ring.jpg"  alt="ring" class="image" title="Diamond ring" style="width:100%">
+        </div>
+  
+        <div class="name"><b style="font-size:12px;">PETITE HALO SOLITAIRE RING</b></div>
+        <div class="price"><p class="price">$19.99</p></div>
+                              
+        <div class="overlay">                           
+          <div class="row1">             
+              <div class="text">
+                  <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                  <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                  <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+              </div>  
+          </div>
+              
+          <div id="textContent">
+                  Available in polished finish.
+                  Also available in 18K yellow gold and platinum.   <br>    
+                  Contact us for prices for different material choice, different finish and different width.
+                  <div id="ViewMore">
+                     <p><b>View More</b></p>  
+                  </div>                   
+          </div>         
+        </div>	
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+      <div class="column">
+        <div class="card">
+          <div> 
+            <img src="imgs/ring.jpg"  alt="ring" class="image" title="Diamond ring" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">PETITE HALO SOLITAIRE RING</b></div>
+          <div class="price"><p class="price">$19.99</p></div>
+                                
+          <div class="overlay">                           
+            <div class="row1">             
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  
+                    </div>                   
+            </div>         
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <div> 
+            <img src="imgs/ring.jpg"  alt="ring" class="image" title="Diamond ring" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">PETITE HALO SOLITAIRE RING</b></div>
+          <div class="price"><p class="price">$19.99</p></div>
+                                
+          <div class="overlay">                           
+            <div class="row1">             
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  
+                    </div>                   
+            </div>         
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <div> 
+            <img src="imgs/ring.jpg"  alt="ring" class="image" title="Diamond ring" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">PETITE HALO SOLITAIRE RING</b></div>
+          <div class="price"><p class="price">$19.99</p></div>
+                                
+          <div class="overlay">                           
+            <div class="row1">             
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  
+                    </div>                   
+            </div>         
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <div> 
+            <img src="imgs/ring.jpg"  alt="ring" class="image" title="Diamond ring" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">PETITE HALO SOLITAIRE RING</b></div>
+          <div class="price"><p class="price">$19.99</p></div>
+                                
+          <div class="overlay">                           
+            <div class="row1">             
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  
+                    </div>                   
+            </div>         
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!--<h2>Pagination - Active State</h2>
+        <p>Add class .active to let the user know which page he/she is on:</p>-->
+    <div class="container">      
+      <ul class="pagination">
+        <li class="active" id="p1"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
+    </div>
+  
+   <!--necklace section--> 
+    <hr style="height:2px; border-width:1px; color:black; background-color:grey;width:88%;text-align:left;margin-left:0">
+  
+    <div class="catergory"><h2>NECKLACES</h2></div>
+  
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div> <!-- class="myEffect"-->
+            <img src="imgs/necklace.jpg"  alt="necklace" class="image" title="Solid Gold Necklace" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">Solid Gold Handmade Miami Cuban Link Necklaces</b></div>
+          <div class="price"><p class="price">$22.99</p></div>
+                                
+          <div class="overlay">     <!-- style="padding:20px"-->                        
+            <div class="row1">             <!--cái border/outline của dòng ADD TO CART sẽ change khi ta edit size của .overlay-->
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  <!--Nếu bỏ vào thẻ <div> riêng thì nó sẽ tự xuống dòng nên phải thêm #ViewMore{display: inline;}-->
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <div> 
+            <img src="imgs/necklace.jpg"  alt="necklace" class="image" title="Solid Gold Necklace" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">Solid Gold Handmade Miami Cuban Link Necklaces</b></div>
+          <div class="price"><p class="price">$22.99</p></div>
+                                
+          <div class="overlay">                           
+            <div class="row1">             
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <div> 
+            <img src="imgs/necklace.jpg"  alt="necklace" class="image" title="Solid Gold Necklace" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">Solid Gold Handmade Miami Cuban Link Necklaces</b></div>
+          <div class="price"><p class="price">$22.99</p></div>
+                                
+          <div class="overlay">                           
+            <div class="row1">             
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <div> 
+            <img src="imgs/necklace.jpg"  alt="necklace" class="image" title="Solid Gold Necklace" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">Solid Gold Handmade Miami Cuban Link Necklaces</b></div>
+          <div class="price"><p class="price">$22.99</p></div>
+                                
+          <div class="overlay">                           
+            <div class="row1">             
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <div> 
+              <img src="imgs/necklace.jpg"  alt="necklace" class="image" title="Solid Gold Necklace" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">Solid Gold Handmade Miami Cuban Link Necklaces</b></div>
+            <div class="price"><p class="price">$22.99</p></div>
+                                  
+            <div class="overlay">                           
+              <div class="row1">             
+                  <div class="text">
+                      <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                      <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                      <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                  </div>  
+              </div>
+                  
+              <div id="textContent">
+                      Available in polished finish.
+                      Also available in 18K yellow gold and platinum.   <br>    
+                      Contact us for prices for different material choice, different finish and different width.
+                      <div id="ViewMore">
+                         <p><b>View More</b></p>  
+                      </div>                   
+              </div>         
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <div> 
+              <img src="imgs/necklace.jpg"  alt="necklace" class="image" title="Solid Gold Necklace" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">Solid Gold Handmade Miami Cuban Link Necklaces</b></div>
+            <div class="price"><p class="price">$22.99</p></div>
+                                  
+            <div class="overlay">                           
+              <div class="row1">             
+                  <div class="text">
+                      <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                      <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                      <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                  </div>  
+              </div>
+                  
+              <div id="textContent">
+                      Available in polished finish.
+                      Also available in 18K yellow gold and platinum.   <br>    
+                      Contact us for prices for different material choice, different finish and different width.
+                      <div id="ViewMore">
+                         <p><b>View More</b></p>  
+                      </div>                   
+              </div>         
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <div> 
+              <img src="imgs/necklace.jpg"  alt="necklace" class="image" title="Solid Gold Necklace" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">Solid Gold Handmade Miami Cuban Link Necklaces</b></div>
+            <div class="price"><p class="price">$22.99</p></div>
+                                  
+            <div class="overlay">                           
+              <div class="row1">             
+                  <div class="text">
+                      <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                      <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                      <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                  </div>  
+              </div>
+                  
+              <div id="textContent">
+                      Available in polished finish.
+                      Also available in 18K yellow gold and platinum.   <br>    
+                      Contact us for prices for different material choice, different finish and different width.
+                      <div id="ViewMore">
+                         <p><b>View More</b></p>  
+                      </div>                   
+              </div>         
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <div> 
+              <img src="imgs/necklace.jpg"  alt="necklace" class="image" title="Solid Gold Necklace" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">Solid Gold Handmade Miami Cuban Link Necklaces</b></div>
+            <div class="price"><p class="price">$22.99</p></div>
+                                  
+            <div class="overlay">                           
+              <div class="row1">             
+                  <div class="text">
+                      <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                      <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                      <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                  </div>  
+              </div>
+                  
+              <div id="textContent">
+                      Available in polished finish.
+                      Also available in 18K yellow gold and platinum.   <br>    
+                      Contact us for prices for different material choice, different finish and different width.
+                      <div id="ViewMore">
+                         <p><b>View More</b></p>  
+                      </div>                   
+              </div>         
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container">      
+        <ul class="pagination">
+          <li class="active" id="p1"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+        </ul>
+      </div>
+  
+      <!--Bracelets section--> 
+    <hr style="height:2px; border-width:1px; color:black; background-color:grey;width:88%;text-align:left;margin-left:0">
+  
+    <div class="catergory"><h2>BRACELETS</h2></div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div> <!-- class="myEffect"-->
+            <img src="imgs/2.25-carat-round-diamond-tennis-bracelet-in-14K-rose-gold.jpg"  alt="bracelets" class="image" title="bracelets" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">round diamond bracelet</b></div>
+          <div class="price"><p class="price">$29.99</p></div>
+                                
+          <div class="overlay">     <!-- style="padding:20px"-->                        
+            <div class="row1">             <!--cái border/outline của dòng ADD TO CART sẽ change khi ta edit size của .overlay-->
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  <!--Nếu bỏ vào thẻ <div> riêng thì nó sẽ tự xuống dòng nên phải thêm #ViewMore{display: inline;}-->
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="card">
+          <div> <!-- class="myEffect"-->
+            <img src="imgs/2.25-carat-round-diamond-tennis-bracelet-in-14K-rose-gold.jpg"  alt="bracelets" class="image" title="bracelets" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">round diamond bracelet</b></div>
+          <div class="price"><p class="price">$29.99</p></div>
+                                
+          <div class="overlay">     <!-- style="padding:20px"-->                        
+            <div class="row1">             <!--cái border/outline của dòng ADD TO CART sẽ change khi ta edit size của .overlay-->
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  <!--Nếu bỏ vào thẻ <div> riêng thì nó sẽ tự xuống dòng nên phải thêm #ViewMore{display: inline;}-->
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="card">
+          <div> <!-- class="myEffect"-->
+            <img src="imgs/2.25-carat-round-diamond-tennis-bracelet-in-14K-rose-gold.jpg"  alt="bracelets" class="image" title="bracelets" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">round diamond bracelet</b></div>
+          <div class="price"><p class="price">$29.99</p></div>
+                                
+          <div class="overlay">     <!-- style="padding:20px"-->                        
+            <div class="row1">             <!--cái border/outline của dòng ADD TO CART sẽ change khi ta edit size của .overlay-->
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  <!--Nếu bỏ vào thẻ <div> riêng thì nó sẽ tự xuống dòng nên phải thêm #ViewMore{display: inline;}-->
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="card">
+          <div> <!-- class="myEffect"-->
+            <img src="imgs/2.25-carat-round-diamond-tennis-bracelet-in-14K-rose-gold.jpg"  alt="bracelets" class="image" title="bracelets" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">round diamond bracelet</b></div>
+          <div class="price"><p class="price">$29.99</p></div>
+                                
+          <div class="overlay">     <!-- style="padding:20px"-->                        
+            <div class="row1">             <!--cái border/outline của dòng ADD TO CART sẽ change khi ta edit size của .overlay-->
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  <!--Nếu bỏ vào thẻ <div> riêng thì nó sẽ tự xuống dòng nên phải thêm #ViewMore{display: inline;}-->
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+    </div>  
+  
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div> <!-- class="myEffect"-->
+            <img src="imgs/2.25-carat-round-diamond-tennis-bracelet-in-14K-rose-gold.jpg"  alt="bracelets" class="image" title="bracelets" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">round diamond bracelet</b></div>
+          <div class="price"><p class="price">$29.99</p></div>
+                                
+          <div class="overlay">     <!-- style="padding:20px"-->                        
+            <div class="row1">             <!--cái border/outline của dòng ADD TO CART sẽ change khi ta edit size của .overlay-->
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  <!--Nếu bỏ vào thẻ <div> riêng thì nó sẽ tự xuống dòng nên phải thêm #ViewMore{display: inline;}-->
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="card">
+          <div> <!-- class="myEffect"-->
+            <img src="imgs/2.25-carat-round-diamond-tennis-bracelet-in-14K-rose-gold.jpg"  alt="bracelets" class="image" title="bracelets" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">round diamond bracelet</b></div>
+          <div class="price"><p class="price">$29.99</p></div>
+                                
+          <div class="overlay">     <!-- style="padding:20px"-->                        
+            <div class="row1">             <!--cái border/outline của dòng ADD TO CART sẽ change khi ta edit size của .overlay-->
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  <!--Nếu bỏ vào thẻ <div> riêng thì nó sẽ tự xuống dòng nên phải thêm #ViewMore{display: inline;}-->
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="card">
+          <div> <!-- class="myEffect"-->
+            <img src="imgs/2.25-carat-round-diamond-tennis-bracelet-in-14K-rose-gold.jpg"  alt="bracelets" class="image" title="bracelets" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">round diamond bracelet</b></div>
+          <div class="price"><p class="price">$29.99</p></div>
+                                
+          <div class="overlay">     <!-- style="padding:20px"-->                        
+            <div class="row1">             <!--cái border/outline của dòng ADD TO CART sẽ change khi ta edit size của .overlay-->
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  <!--Nếu bỏ vào thẻ <div> riêng thì nó sẽ tự xuống dòng nên phải thêm #ViewMore{display: inline;}-->
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="card">
+          <div> <!-- class="myEffect"-->
+            <img src="imgs/2.25-carat-round-diamond-tennis-bracelet-in-14K-rose-gold.jpg"  alt="bracelets" class="image" title="bracelets" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">round diamond bracelet</b></div>
+          <div class="price"><p class="price">$29.99</p></div>
+                                
+          <div class="overlay">     <!-- style="padding:20px"-->                        
+            <div class="row1">             <!--cái border/outline của dòng ADD TO CART sẽ change khi ta edit size của .overlay-->
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  <!--Nếu bỏ vào thẻ <div> riêng thì nó sẽ tự xuống dòng nên phải thêm #ViewMore{display: inline;}-->
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+    </div>  
+  
+    <div class="container">      
+      <ul class="pagination">
+        <li class="active" id="p1"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
+    </div>
+  
+    <!--Earrings section--> 
+    <hr style="height:2px; border-width:1px; color:black; background-color:grey;width:88%;text-align:left;margin-left:0">
+  
+    <div class="catergory"><h2>EARRINGS</h2></div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div> 
+            <img src="imgs/diamond_flow_white_sea_pearl_earrings.jpg"  alt="earrings" class="image" title="earrings" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">FRESHWATER PEARL CRADLE EARRINGS WITH DIAMONDS</b></div>
+          <div class="price"><p class="price">$20.99</p></div>
+                                
+          <div class="overlay">                          
+            <div class="row1">             
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="card">
+          <div> 
+            <img src="imgs/diamond_flow_white_sea_pearl_earrings.jpg"  alt="earrings" class="image" title="earrings" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">FRESHWATER PEARL CRADLE EARRINGS WITH DIAMONDS</b></div>
+          <div class="price"><p class="price">$20.99</p></div>
+                                
+          <div class="overlay">                          
+            <div class="row1">             
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="card">
+          <div> 
+            <img src="imgs/diamond_flow_white_sea_pearl_earrings.jpg"  alt="earrings" class="image" title="earrings" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">FRESHWATER PEARL CRADLE EARRINGS WITH DIAMONDS</b></div>
+          <div class="price"><p class="price">$20.99</p></div>
+                                
+          <div class="overlay">                          
+            <div class="row1">             
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="card">
+          <div> 
+            <img src="imgs/diamond_flow_white_sea_pearl_earrings.jpg"  alt="earrings" class="image" title="earrings" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">FRESHWATER PEARL CRADLE EARRINGS WITH DIAMONDS</b></div>
+          <div class="price"><p class="price">$20.99</p></div>
+                                
+          <div class="overlay">                          
+            <div class="row1">             
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div> 
+            <img src="imgs/diamond_flow_white_sea_pearl_earrings.jpg"  alt="earrings" class="image" title="earrings" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">FRESHWATER PEARL CRADLE EARRINGS WITH DIAMONDS</b></div>
+          <div class="price"><p class="price">$20.99</p></div>
+                                
+          <div class="overlay">                          
+            <div class="row1">             
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="card">
+          <div> 
+            <img src="imgs/diamond_flow_white_sea_pearl_earrings.jpg"  alt="earrings" class="image" title="earrings" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">FRESHWATER PEARL CRADLE EARRINGS WITH DIAMONDS</b></div>
+          <div class="price"><p class="price">$20.99</p></div>
+                                
+          <div class="overlay">                          
+            <div class="row1">             
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="card">
+          <div> 
+            <img src="imgs/diamond_flow_white_sea_pearl_earrings.jpg"  alt="earrings" class="image" title="earrings" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">FRESHWATER PEARL CRADLE EARRINGS WITH DIAMONDS</b></div>
+          <div class="price"><p class="price">$20.99</p></div>
+                                
+          <div class="overlay">                          
+            <div class="row1">             
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class="card">
+          <div> 
+            <img src="imgs/diamond_flow_white_sea_pearl_earrings.jpg"  alt="earrings" class="image" title="earrings" style="width:100%">
+          </div>
+    
+          <div class="name"><b style="font-size:12px;">FRESHWATER PEARL CRADLE EARRINGS WITH DIAMONDS</b></div>
+          <div class="price"><p class="price">$20.99</p></div>
+                                
+          <div class="overlay">                          
+            <div class="row1">             
+                <div class="text">
+                    <div id="textLove" class="column1 right1" title="Add to Wish list"><i class="fa fa-heart"></i></div>  
+                    <div id="textCart" class="column1 middle1" title="Add to cart"><b>Add to cart</b> </div>
+                    <div id="textCompare" class="column1 right1" title="Add to Compare"><i class="fa fa-balance-scale"></i></div> 
+                </div>  
+            </div>
+                
+            <div id="textContent">
+                    Available in polished finish.
+                    Also available in 18K yellow gold and platinum.   <br>    
+                    Contact us for prices for different material choice, different finish and different width.
+                    <div id="ViewMore">
+                       <p><b>View More</b></p>  
+                    </div>                   
+            </div>         
+          </div>	
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">      
+      <ul class="pagination">
+        <li class="active" id="p1"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
+    </div>
+  
+  </div>  
+              
+<!---------------------------------------------------------day la body 6-------------------------------------------------------------------------------------------------->
+                
+                <div class="item18" id="item18">
+                    <div class="footer_logoes">
+                        <ul>
+                            <li><img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/gia.jpg" alt=""></li>
+                            <li><img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/gia-alumini.jpg" alt=""></li>
+                            <li><img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/jaa-member.jpg" alt=""></li>
+                            <li><img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/canada-mark.png" alt=""></li>
+                            <li><img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/hrd-antwerp.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="footer_logoes1">
+                        <ul>
+                            <li><img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/BBA-Listing.png" alt="BBA Listing" style="width: 80px;"></li>
+                            <li><img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/PWA-Listing.png" alt="PWA Listing" style="width: 80px;"></li>
+                        </ul>
+                       
+                    </div> 
+                </div>
+                <div class="item19">
+                    lINK AND INFO
+                </div>
+            </div>
+</body>
+</html>

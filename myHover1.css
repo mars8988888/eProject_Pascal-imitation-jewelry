@@ -1,0 +1,224 @@
+/* CSS Document */
+
+/*Hover của hình chiếc ring*/
+/* 	.myEffect:hover {           
+		box-shadow: 1px 2px 10px #888;
+        transform: rotateY(180deg);    
+        opacity: 0.5;
+    } */
+    #cover{     /*Style Div cover bao bên ngoài phần Product Cards */
+      width: fit-content;   /*Để fit-content sẽ ko cần phải chỉnh nữa, nội dung sao nó sẽ responsive theo như vậy*/
+      height: fit-content;
+      margin-left: 40%;
+      margin-top:15px;    /*margin: canh distance từ border ra bên ngoài*/
+      margin-bottom:15px;
+      padding-top:2%;    /*padding: canh distance từ border vào inside*/
+      padding-left:50% ;
+      /* padding-right:1% ; */
+      border-left:3px solid rgba(183,183,183,1.00);
+      border-right: 3px solid rgba(183,183,183,1.00);
+      border-radius:20px;   /*hiệu ứng bo cạnh*/
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      background-color: none; /*rgba(245, 245, 220, 0.247)*/
+      /* text-align: center; */
+    }  
+  .card {		/*style của ô <div> lớn ngoài cùng*/
+        position: relative; /*chưa hiểu cái này lắm? Chỉ có bên trái of giữa thôi???*/
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 250px;   /*phân biệt max width/height vs width/height nhé! Lưu ý Property 'fit-content' */
+        height: 350px;   
+        /* margin: auto; */
+        text-align: center;
+        font-family: arial;
+        background-color:white;
+  }
+
+  .image {	/*cho hình nền*/
+    /*opacity:1;	- Show/Hidden hình nền*/
+    display: block;
+    width: 100%;
+    height: auto;
+    /*transition:0.5s ease;	- tốc độ hóa mờ hình nền*/
+    /* backface-visibility: hidden; */
+  }
+
+  .catergory{
+    text-align:left;
+    color: rgb(136, 138, 41);
+  }
+
+  .name{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  .price {    /*style của Price*/
+    color: grey;
+    font-size: 30px;
+  }
+
+  .overlay {    /*style của ô text trong overlay. Combine 2 trong 1 (cả .middle & .text trong một .text)*/
+        position: absolute;
+        /* display: none; */    /*với code này mà dùng thuộc tính này thì nó sẽ ko hiện ra overlay đâu nhé!*/
+        width: 100%;   /*Để 100% là full div.class nhé!*/   /*phân biệt max width/height vs width/height! Phải khớp vs .card*/
+        height: 100%;   /*Để 100% là full div.class nhé!*/  /*cái border/outline của dòng ADD TO CART sẽ change khi ta edit size của #overlay*/
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; 
+        background-color: rgba(0,0,0,0.28);
+        opacity: 0;   /*độ phủ mờ*/
+        z-index: 2;     /*cái này chưa hiểu lắm*/
+        cursor: pointer;    /*kiểu con trỏ khi để vào overlay*/
+        transition: .5s ease;
+      }
+      
+  .text{    /*style của ô text trong overlay*/
+        position: absolute;   /*Những thông số này là để so chỉnh vị trí Text trong overlay*/
+        top: 60%;             /*Những thông số này là để so chỉnh vị trí Text trong overlay*/
+        left: 50%;            /*Những thông số này là để so chỉnh vị trí Text trong overlay*/
+        font-size: 15px;
+        color: white;  
+        outline:orange groove 3px;
+        border:2px ridge white;
+        /*2 thuộc tính padding & margin: nếu để chỉ 1 số sẽ tự hiểu cả 2 loại distances*/
+        padding: 0px 0px;    /*1st: distance giữa chữ vs trên dưới của border
+                               2nd: distance giữa chữ vs 2 bên trái phải của border*/
+        margin: auto;        /*canh lề trái. Nếu để số âm cả ô sẽ thụt lùi về*/     
+        transform: translate(-50%,-50%); 
+        -ms-transform: translate(-50%,-50%);  
+        width: 90%;
+        font-family: Calibri, sans-serif;  /* "Courier New", Courier, monospace */  /* Georgia, Times, serif */
+        text-transform: uppercase;    /*Viết chữ in hoa*/
+        background-color:none;
+      }
+
+  .card:hover .overlay {	
+        opacity: 1;		/*độ phủ mờ của thẻ card*/
+      }    
+      
+      #textCart:hover{
+      /* opacity: 0.7;
+         text-decoration:underline;*/
+         background-color: orange;    
+         color: black;         
+      }  
+
+      #textLove:hover{
+        /* opacity: 0.7;
+           text-decoration:underline;*/
+           background-color: orange;    
+           color: black;         
+        }  
+
+      #textCompare:hover{
+      /* opacity: 0.7;
+         text-decoration:underline;*/
+         background-color: orange;    
+         color: black;         
+      }  
+
+      #textContent{
+        position: absolute;   /*Những thông số này là để so chỉnh vị trí Text trong overlay*/
+        top: 5%;             /*Những thông số này là để so chỉnh vị trí Text trong overlay*/
+        left: 5%;            /*Những thông số này là để so chỉnh vị trí Text trong overlay*/
+        right: 5%;
+        font-size: 15px;    
+        color: white; 
+        text-align:justify;
+      }
+
+      #ViewMore{
+        text-align: center;   /* display: inline; -- để dòng View More ko bị xuống dòng*/
+        font-size: 17px;
+      }
+
+      #ViewMore:hover{
+        text-decoration: underline;
+      }
+
+    /*------------Chia 3 cột trong div - Three Unequal Columns: phần Add to Cart------------*/
+        * {
+            box-sizing: border-box;
+          }
+
+          /* Create three unequal columns that floats next to each other */
+        .column1 {
+            float: left;
+            padding: 8px 0px;
+            /*height: 300px; --> Should be removed. Only for demonstration */
+            /* outline:orange groove 3px; */       
+        }
+        
+        .left1, .right1 {
+            width: 20%;
+        }
+        
+        .middle1 {
+            width: 60%;
+            border-left:2px ridge white;
+            border-right:2px ridge white;
+        }
+        
+        /* Clear floats after the columns */
+        .row1:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    /*------------Chia 3 cột trong div - Three Unequal Columns: phần Add to Cart------------*/
+
+    /*------------Responsive Column Cards------------*/
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Float four columns side by side - Làm nổi bốn cột cạnh nhau*/
+    .column {
+      float: left; /*Canh lề trái-phải*/
+      width: fit-content; /*fit-content nên sẽ tự điều chỉnh theo size của .card*/
+      height: fit-content;
+      padding: 0 5px;   /*2nd: khoảng cách giữa các card columns*/
+    }
+    
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 -5px;}  /*1st: distance giữa các rows*/
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      padding: 8px 0;   /*1st: khoảng cách giữa các card rows*/
+    }
+    
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+     /*------------Responsive Column Cards------------*/
+
+     
+     /*hình tròn chỗ biến Cart - Badges*/
+.dot {
+  height: fit-content;     /*size của background block*/
+  width: fit-content;
+  background-color: rgba(212, 98, 21, 0.582);
+  border-radius: 50%;   /*đây chính là chỗ chỉnh cho background thành hình tròn*/
+  display: inline-block;       /*inline-block: mấy cái dot sẽ xếp theo 1 hàng ngang*/
+  padding-top: 0.5%;  /*canh text so vs lề border trên cùng của background*/
+  padding-left: 4%;
+  padding-right: 4%;
+  text-align:center;    /*Canh text ngay giữa background*/
+  color: white;
+}
