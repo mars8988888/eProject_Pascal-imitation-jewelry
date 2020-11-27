@@ -730,3 +730,17 @@ user agent stylesheet
     border-radius: 2px;
     color: white;
 }
+/* ---------------------------------------------------------------------------------- */
+.item1001 {
+    grid-column: 1/ span 6;
+  }
+  #item1001 {
+    border: 1px solid red;
+  }
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
