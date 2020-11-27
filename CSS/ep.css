@@ -82,8 +82,9 @@ head, body{
     color:rgb(219, 166, 21);
 }
 .nav1 .item3  a:hover{
-    color:pink;
+    color:white;
     transition: .4s;
+    
 }
 #item1, #item2, #item3 {
     background-color:black ;
@@ -113,6 +114,7 @@ head, body{
     color: white;
     padding-top: 40px;
     font-size: 30px;
+    
 }
 .nav2 .item4  a{
     display: block;
@@ -128,20 +130,29 @@ head, body{
 }
 
 .item6 {
-    /* grid-column: 5 / span 2; */
+    text-decoration: none;
     width: 20%; 
     font-size: 20px;
-    /* margin-top: 50px; */
+    
     
     
 }
 .item6b{
-    /* grid-column: 5 / span 2; */
+    text-decoration: none;
     width: 20%; 
     font-size: 20px;
-    /* margin-top: 50px; */
     
     
+    
+}
+.item6 a:hover {
+    color: white;
+    text-decoration: none;
+}
+.item6b a:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -282,36 +293,53 @@ head, body{
 
 }  
 ._1item .layer2{
-    position: relative;
-    top: 40px;left: -30px;
+    
+    box-sizing: border-box;
+    border: none;
+    top: 50px;left: -60px;
     position: absolute;
     visibility: hidden;
     transition: 0.1s;
-    width: fit-content;
-    /* height: 100%; */
     background-color: rgb(247, 242, 242);
-    /* border:1px solid rgb(168, 166, 166); */
     height: auto;
-    width: 120%;
+    width: 300px;
     z-index: 2;
     text-align: left;
+    background-color: white;
     
 }
 ._1item .layer2 ul{
     text-decoration: none;
     list-style: none;
     
+    
 }   
 ._1item .layer2 ul li a{
-    display: inline-block;
+    
+    padding-left: 10px;
+    display: block;
     font-family: arial;
     font-size: 15px;
-    margin-left: -30px;
+    margin-left: -40px;
     text-decoration: none;
+    color: #bb7f06;
+    font-weight: 500;
+    width: 300px;
+    margin-top: 0px;
+    
 }
 ._1item .layer2 ul li a:hover{
-    color: #bb7f06; 
+    
+    background-color: grey;
     transition: 0.2s;
+    color: white;
+    
+}
+._1item .layer2 ul li:hover{
+    
+    transition: 0.2s;
+    color: white;
+    
 }
 ._1item:hover .layer2{
     visibility:visible;
@@ -320,12 +348,6 @@ head, body{
       
 }
 
-/* ._1item .layer2:hover ul li{
-    visibility: visible;
-    opacity: 1;
-    transition: 0.1s;
-   
-} */
 
 
 /* ----------------------------------------------------------------------Body------------------------------------------------------------------------------------ */
@@ -461,11 +483,7 @@ user agent stylesheet
     /* border: 1px solid black; */
     display: block;
     margin-top: 0;
-    /* margin-bottom: 1rem;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px; */
+    
     text-align: justify;
   
 }
@@ -493,28 +511,7 @@ user agent stylesheet
     transition: 0.4s;
     background-color: rgb(212, 180, 36);;
 }
-/* a:visited, .alink:visited {
-    color: #d7a627;
-    text-decoration: none;
-}
-a:visited, .alink:visited {
-    color: #006bb4;
-    text-decoration: none;
-}
-a, .alink {
-    color: #d7a627;
-    text-decoration: none;
-}
-a, .alink {
-    color: #006bb4;
-    text-decoration: none;
-}
-user agent stylesheet
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-} */
+
 
     
 /* ----------------------------------------------------------------------Body 4------------------------------------------------------------------------------------ */
