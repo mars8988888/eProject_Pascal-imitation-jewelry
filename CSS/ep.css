@@ -285,7 +285,7 @@ head, body{
 }
 ._1item a.layer1 {
     position: relative;
-    color:#6e614b;
+    color:#bb7f06;
     padding:0 20px;
     text-align: left;
     font:bold 15px arial;
@@ -356,8 +356,8 @@ head, body{
   
 }
 .item8 .container{
-
-    z-index: -1;
+    width: 60%;
+    z-index: 1;
 }
 /* ----------------------------------------------------------------------Body 2------------------------------------------------------------------------------------ */
 .item9{
@@ -470,7 +470,7 @@ user agent stylesheet
     font-family: montserrat,sans-serif;
 
 }
-.item11 > h3{
+.item11 > h4{
     display: block;
     font-size: 1.17em;
     margin-block-start: 1em;
