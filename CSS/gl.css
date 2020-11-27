@@ -79,6 +79,21 @@ div.desc {
   text-align: center;
   font-size: medium;
 }
+#item1000 h3 {
+  font: bold 30px arial;
+}
+#item1000 p{
+  font: 20px arial;
+}
+
+.item1000 {
+  grid-column: 1 / span 6;
+  
+}
+#item1000 video{
+  width: 100%;
+  height: 500px;
+}
 #item41 h3 {
   font: bold 30px arial;
 }
