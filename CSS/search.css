@@ -1,0 +1,31 @@
+.search-container {
+    background-color: #FFF;
+    position: relative;
+    border-radius: 30px;
+    padding: 2px 0px 5px 10px; /*top; right; bottom; left*/
+    width: 400px;     /*size của thanh search, cái này vs cái search-box phải để đơn vị có sự liên hệ vs nhau mới dc nhé*/
+    margin-left: 30%;
+    margin-top: 10%;
+  }
+  .search-box {
+    /* position: relative; */
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    font-size: 15px;
+    border: 0;
+    width: 95%;     /*chỉnh cái này là 60% thì dòng chữ Search... lại canh lề trái ???
+                    ~~> Để background-color:red; là sẽ hiểu ra ngay*/
+  }
+  .search-button {
+    position: absolute;
+    right: 2px; 
+    top: 2px;
+    /* background-color: #C00; */
+    border-radius: 50%;
+    border: 0;
+    /* color: #FFF; */
+    width: 45px;    /*size của button*/
+    height: 45px;
+    outline: 0;
+  }
