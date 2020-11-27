@@ -85,7 +85,10 @@ div.desc {
 
 
 #item1000 h3 {
-  font: bold 30px arial;
+  font: bold 30px "Amatic SC", sans-serif;
+  color: #bb7f06;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 #item1000 p{
   font: 20px arial;
@@ -97,10 +100,14 @@ div.desc {
 }
 #item1000 video{
   width: 100%;
-  height: 500px;
+  height: 400px;
+}
+#item1000 {
+  background-color: black;
 }
 #item41 h3 {
   font: bold 30px arial;
+
 }
 #item41 p{
   font: 20px arial;

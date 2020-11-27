@@ -65,16 +65,23 @@
     border-top: 1px solid #bb7f06;
 }
 /* ------------------------------------------------------------------------------------------------------------------------------ */
-.item1001 {
+.item1002 {
     grid-column: 1/ span 6;
-  }
-  #item1001 {
-    border: 1px solid red;
-  }
-#myVideo {
+    grid-row: 4 / span 2;
+}
+
+#item1002 video {
     position: fixed;
+    top: auto;
     right: 0;
     bottom: 0;
     min-width: 100%; 
     min-height: 100%;
   }
+
+#nav2 {
+    z-index: 55;
+}
+#item7 {
+    z-index: 55;
+}

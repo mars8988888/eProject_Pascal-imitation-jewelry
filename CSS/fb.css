@@ -16,13 +16,22 @@
 .item34 {
     grid-column: 1 / span 6;
 }
-
+#item34 {
+    background-image: url(../image/947849.jpg);
+}
+#item33 p{
+    text-align: justify;
+    font: 20px arial;
+    line-height: 30px;
+    width: 100%;
+}
 #item34 p{
     text-align: justify;
     font: 20px arial;
     line-height: 30px;
     width: 100%;
 }
+
 
 form {
     border: none;
@@ -54,6 +63,7 @@ table {
     
     box-shadow: 5px 5px 8px #888888;
     cursor: pointer;
+    
 }
 table input[type=email] , input[type=text] {
     width: 100%;
@@ -92,7 +102,7 @@ table input[type=submit], input[type=reset] {
     background-color: #2cbaac;
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 8px 16px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
@@ -140,6 +150,7 @@ table input[type=submit], input[type=reset] {
     grid-column: 1 / span 3;
 }
 img {
+    margin-top: 50px;
     width: 80%;
     
 }
