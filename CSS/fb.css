@@ -1,9 +1,4 @@
 
-/* *{
-    box-sizing: border-box;
-    margin: 0px;
-    background-color: #f7e8c7;  
-} */
 
 /* --------------------------------------------------------------------item 33------------------------------------------------------------------------------------------------ */
 
@@ -30,7 +25,13 @@
 }
 
 form {
-    /* border: 1px solid white; */
+    border: none;
+    width: 50%;
+    box-shadow: 5px 5px 10px 10px #888888;
+    margin: 50px auto;
+    background-color: white;
+    outline: none;
+    border-radius: 10px;
 }
 table {
     width: 100%;
@@ -41,6 +42,7 @@ table {
     padding-top: 30px;
     border-radius: 5px;
     padding-left: 10px;
+    padding-right: 30px;
     font: bold 30px times; 
     width: fit-content;
     background-color: #feeecb;
@@ -54,7 +56,10 @@ table {
     cursor: pointer;
 }
 table input[type=email] , input[type=text] {
-    width: 80%;
+    width: 100%;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 2px;
 }
 
 table td {
@@ -68,6 +73,7 @@ table input, span{
     /* border: 1px solid white; */
     font-size: 20px;
     padding-left: 0px;
+    
 }
 
 table textarea{
@@ -78,6 +84,9 @@ table textarea{
     resize: vertical;
     overflow-y: scroll;
     font-size: 20px;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 2px;
 }
 table input[type=submit], input[type=reset] {
     background-color: #2cbaac;
