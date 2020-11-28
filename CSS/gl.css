@@ -63,12 +63,21 @@ div.gallery {
   border: 1px solid #ccc;
   float: left;
   width: 200px;
+  z-index: 1;
+  height: 200px;
 }
 
 div.gallery:hover {
   border: 1px solid #777;
-  width: 500px;
   cursor:zoom-in;
+  width: 500px;
+  height: 500px;
+  z-index: 20;
+  box-shadow: 15px 20px 15px 20px grey;
+  transition: 1s;
+  top: auto;
+  left: auto;
+  position: relative;
 }
 
 div.gallery img {
@@ -81,6 +90,7 @@ div.desc {
   padding: 15px;
   text-align: center;
   font-size: medium;
+  
 }
 
 
@@ -113,25 +123,3 @@ div.desc {
   font: 20px arial;
 }
 /* -----------------------------------------------hover image------------------------------------------------------------------------------------- */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.desc {
-  padding: 15px;
-  text-align: center;
-}
