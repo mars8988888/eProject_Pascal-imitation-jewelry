@@ -189,7 +189,7 @@ head, body{
 #item5 {
     /* border: 1px solid black; */
     width: 50%;  
-    z-index: 15;
+    z-index: 999;
     color: black ;
 }
 
