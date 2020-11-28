@@ -7,7 +7,7 @@
 
 #item30 h1 {
     text-align: left;
-    font: bold 40px times;
+    font: bold 40px arial;
 }
 /* -------------------------------------------------------Phan chinh item31------------------------------------------------------------------------------------------------------ */
 .item31 {
@@ -62,7 +62,7 @@
 }
 #item32 h1 {
     text-align: left;
-    font: bold 40px times;
+    font: bold 40px arial;
     padding: 10px;
     width: fit-content;
     background-color: #feeecb;
@@ -74,14 +74,14 @@
 
 #item32 h3 {
     text-align: left;
-    font: bold 30px/50px  times;
+    font: bold 30px/50px  arial;
 }
 #item32 li {
     text-align: left;
-    font: 20px/50px  times;
+    font: 20px/50px  arial;
 }
 #item32 p {
-    font: 20px times;
+    font: 20px arial;
     line-height: 50px;
 }
 
