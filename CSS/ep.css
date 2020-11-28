@@ -752,3 +752,11 @@ user agent stylesheet
     min-width: 100%; 
     min-height: 100%;
   }
+  /* ----------------------------------phan cua tung---------------------------------------------------------- */
+.item50 {
+      grid-column: 1 / span 6;
+
+  }
+#item50 {
+    border: 1px solid red;
+}
