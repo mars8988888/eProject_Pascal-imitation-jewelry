@@ -6,6 +6,7 @@
     height: auto;
     border-left: none;
     
+    
 }
   
 /* Style the buttons inside the tab */
@@ -21,6 +22,9 @@
     cursor: pointer;
     transition: 0.3s;
     font-size: 17px;
+    text-transform: uppercase;
+    color: #bb7f06;
+    font-weight: 500;
     
   }
   
@@ -31,7 +35,8 @@
   
   /* Create an active/current "tab button" class */
 .item40 button.active {
-    background-color: #ccc;
+    background-color: #b0920c;
+    color: whitesmoke;
   }
   
   /* Style the tab content */
@@ -53,40 +58,58 @@
     
     grid-column: 2 / span 5;
     
-    height: 1500px;
+    height: 2000px;
     border-left: 1px solid #bb7f06;
 }
 
 /* ----------------------------------------------------------gallery------------------------------------------------*/
-div.gallery {
+#item41 .gallery {
   margin: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #bb7f06;
   float: left;
-  width: 200px;
+  
   z-index: 1;
-  height: 200px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-  cursor:zoom-in;
-  width: 500px;
-  height: 500px;
-  z-index: 20;
-  box-shadow: 15px 20px 15px 20px grey;
-  transition: 1s;
+  width: 200px;
+  height: 300px;
   top: auto;
   left: auto;
   position: relative;
+
 }
 
-div.gallery img {
+#item41 .gallery:hover {
+  
+ 
+  
+  z-index: 999;
+}
+
+#item41 .gallery img {
   width: 100%;
   height: auto;
+  z-index: 1;
 
 }
 
-div.desc {
+#item41 .gallery img:hover {
+  background-color:  burlywood;
+  cursor: pointer;
+  
+  box-shadow:  5px 5px 10px 10px  burlywood;
+  transition: 3s;
+  border: 1px solid #bb7f06;
+  width: 500px;
+  height: 500px;
+  top: auto;
+  left: 00px;
+  
+  position: relative;
+  transform: rotate(360deg);  
+  transform-style: preserve-3d;
+
+}
+
+#item41 .desc {
   padding: 15px;
   text-align: center;
   font-size: medium;

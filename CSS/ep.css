@@ -279,8 +279,9 @@ head, body{
     width: 100%;
     height: 40px;
     line-height: 40px;  
-    
-    
+    border: none;
+    /* padding-top: 25px;
+    padding-bottom: 22px; */
     
 }
 ._1item a.layer1 {
@@ -291,7 +292,16 @@ head, body{
     font:bold 15px arial;
     text-decoration: none;
 
-}  
+}
+._1item a.layer1:hover {
+    color: #6b4801;
+    
+}
+/* ._1item:hover{
+    background-color: #bb7f06;
+    transition: 1s;
+    
+}  */
 ._1item .layer2{
     
     box-sizing: border-box;
