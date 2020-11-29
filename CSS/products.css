@@ -4,23 +4,26 @@
     background-color: #f1f1f1;
     width: 100%;
     height: auto;
-    border-left: none;
-    
+    border-left: 1px solid #b0920c;
+    border-top: 1px solid #b0920c;
 }
   
 /* Style the buttons inside the tab */
 .item40 button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #bb7f06;
+  font-weight: 500;
     
   }
   
@@ -31,7 +34,8 @@
   
   /* Create an active/current "tab button" class */
 .item40 button.active {
-    background-color: #ccc;
+  background-color: #b0920c;
+  color: whitesmoke;
   }
   
   /* Style the tab content */

@@ -760,3 +760,41 @@ user agent stylesheet
 #item50 {
     border: 1px solid red;
 }
+/* ------------------------------------breadcum----------------------------------------------------- */
+.item900 {
+    grid-column: 1 / span 6;
+}
+#item900 {
+    background-color: #ffeacc;
+    border: none;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #ffeacc;
+    border: none;
+    text-align: left;
+    padding-bottom: 0px;
+    
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+ul.breadcrumb li {
+    display: inline;
+    font-size: 15px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">\00a0";
+  }
+ul.breadcrumb li a {
+    color: #b0920c;
+    text-decoration: none;
+  }
+ul.breadcrumb li a:hover {
+    color: #bb7f06;
+    text-decoration: underline;
+  }
