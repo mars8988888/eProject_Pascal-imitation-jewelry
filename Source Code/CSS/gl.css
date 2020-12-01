@@ -74,6 +74,7 @@
   top: auto;
   left: auto;
   position: relative;
+  
 
 }
 
@@ -85,19 +86,21 @@
   transition: 3s;
   
   z-index: 999;
+
+
 }
 
 #item41 .gallery img {
   width: 100%;
   height: auto;
   z-index: 1;
-
+  
 }
 
 #item41 .gallery img:hover {
   background-color:  burlywood;
   cursor: pointer;
-
+  
   
 
 }
@@ -106,7 +109,8 @@
   padding: 15px;
   text-align: center;
   font-size: medium;
-  
+  opacity: 1;
+  ;
 }
 
 

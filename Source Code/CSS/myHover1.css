@@ -180,6 +180,7 @@
         
         /* Clear floats after the columns */
         .row1:after {
+        
             content: "";
             display: table;
             clear: both;
