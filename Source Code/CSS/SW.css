@@ -1,0 +1,23 @@
+.item60 {
+    grid-column: 1 / span 6;
+}
+#item60 {
+    background-color: rgba(221,182,90,1);
+    height: 2000px;
+    position: flex;
+    justify-content: space-between;
+}
+.w3-third {
+    width: 30%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+#item60 h1 {
+    text-align: center;
+}
+#item60 h5 {
+    text-align: center;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
