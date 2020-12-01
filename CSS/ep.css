@@ -145,12 +145,13 @@ head, body{
     
     
 }
-.item6 a:hover {
-    color: white;
+
+.item6 > a:hover {
+    color: rgb(219, 166, 21);
     text-decoration: none;
 }
-.item6b a:hover {
-    color: white;
+.item6b > a:hover {
+    color: rgb(219, 166, 21);
     text-decoration: none;
     cursor: pointer;
 }
