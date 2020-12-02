@@ -861,8 +861,12 @@ ul.breadcrumb li a:hover {
 #item1500 .container {
     padding: 16px;
     padding-left: 0px;
+    width: 60%;
+    height: auto;
+    margin-top: 20px;
+    height: auto;
   }
-  
+
 #item1500  span.psw {
     float: right;
     padding-top: 16px;
@@ -889,22 +893,22 @@ ul.breadcrumb li a:hover {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    height: 80%;
+    width: 40%; /* Could be more or less, depending on screen size */
+    height: 90%;
   }
   
   /* The Close Button (x) */
-#item1500  .close {
+.close {
     position: absolute;
     right: 25px;
     top: 0;
     color: #000;
     font-size: 35px;
     font-weight: bold;
+    
   }
   
-#item1500  .close:hover,
-#item1500 .close:focus {
+#close :hover {
     color: red;
     cursor: pointer;
   }
