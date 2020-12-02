@@ -44,8 +44,8 @@
     
                                 </div>
                                 <div class="item3" id="item3">
-                                    <a href=""><span class="fa fa-user"></span> Login </a>
-                                    <a href="Register.html"><span class="fa fa-pencil"></span> Register</a>
+                                  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span class="fa fa-user"></span> Login</button>
+                                  <button ><span class="fa fa-pencil"></span><a href="Register.html">Resgister</a> </button>
                 
                                 </div>
                             </div>
@@ -169,6 +169,41 @@
                             </div>
                         
 <!---------------------------------------------------------day la BODY -------------------------------------------------------------------------------------------------->
+                  <div class="item1500" id="item1500">
+                    <div id="id01" class="modal">
+
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="image/tuan.jpg" alt="Avatar" class="avatar">
+                        <img src="image/nam.jpg" alt="Avatar" class="avatar">
+                        <img src="image/phu.jpg" alt="Avatar" class="avatar">
+                        <img src="image/tung.jpg" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                        <button type="submit">Login</button>
+                        <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                    </form>
+                  </div>
+
+                  </div>
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
                   <div class="item900" id="item900">
                     <ul class="breadcrumb">
                       <li><a href="#">Home</a></li>

@@ -34,19 +34,20 @@
                             <div class="item2" id="item2">
                                 <div class="item6" id="item6">
         
-                                    <a href="" style="color:#bb7f06;"><span class="fa fa-shopping-cart"></span>Your Cart</a>
+                                    <a href="" style="color:rgb(219, 166, 21)"><span class="fa fa-shopping-cart"></span>Your Cart</a>
                                     
                                 </div>
                                 <div class="item6b" id="item6b">
                                    
-                                <a style="color: #bb7f06;" ><span class="fa fa-phone"></span>0987236232</a>
+                                <a style="color: rgb(219, 166, 21)" ><span class="fa fa-phone"></span>0987236232</a>
                                 </div> 
 
                             </div>
                             <div class="item3" id="item3">
-                                <a href=""><span class="fa fa-user"></span> Login </a>
-                                <a href="Register.html"><span class="fa fa-pencil"></span> Register</a>
-            
+                                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span class="fa fa-user"></span> Login</button>
+                                <button ><span class="fa fa-pencil"></span><a href="Register.html">Resgister</a> </button>
+                                
+                                
                             </div>
                         </div>
                         
@@ -163,19 +164,56 @@
                                                     </ul>
                                                 </div>   
                                             </div> 
+                </div>        
                                             
-                                            
-                                        
+<!---------------------------------------------------------day la login form -------------------------------------------------------------------------------------------------->                                            
+
+
+                        <div class="item1500" id="item1500">
+                            <div id="id01" class="modal">
+  
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                              <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <img src="image/tuan.jpg" alt="Avatar" class="avatar">
+                                <img src="image/nam.jpg" alt="Avatar" class="avatar">
+                                <img src="image/phu.jpg" alt="Avatar" class="avatar">
+                                <img src="image/tung.jpg" alt="Avatar" class="avatar">
+                              </div>
+                          
+                              <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                          
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                  
+                                <button type="submit">Login</button>
+                                <label>
+                                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                              </div>
+                          
+                              <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                              </div>
+                            </form>
+                          </div>
+
                         </div>
+                        
                     
 <!---------------------------------------------------------day la BODY -------------------------------------------------------------------------------------------------->
-
+<!-- background video -->
                 <div class="item1001" id="item1001">
                     <video autoplay muted loop id="myVideo">
                         <source src="image/Gallery/video_hp_eoy_1_US.mp4" type="video/mp4">
                         Your browser does not support HTML5 video.
                     </video>
                 </div>
+
+<!-- carousel -->
                 <div class="item8" id="item8">
                     <div class="container"> 
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">

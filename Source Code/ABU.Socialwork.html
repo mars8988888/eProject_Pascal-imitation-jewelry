@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-            <title>Homepage</title>
+            <title>About us| Social work</title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             
@@ -46,8 +46,8 @@
 
                             </div>
                             <div class="item3" id="item3">
-                                <a href=""><span class="fa fa-user"></span> Login </a>
-                                <a href="Register.html"><span class="fa fa-pencil"></span> Register</a>
+                              <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span class="fa fa-user"></span> Login</button>
+                              <button ><span class="fa fa-pencil"></span><a href="Register.html">Resgister</a> </button>
             
                             </div>
                         </div>
@@ -173,6 +173,41 @@
                         </div>
                     
 <!---------------------------------------------------------day la BODY -------------------------------------------------------------------------------------------------->
+                                <div class="item1500" id="item1500">
+                                  <div id="id01" class="modal">
+
+                                  <form class="modal-content animate" action="/action_page.php" method="post">
+                                  <div class="imgcontainer">
+                                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                      <img src="image/tuan.jpg" alt="Avatar" class="avatar">
+                                      <img src="image/nam.jpg" alt="Avatar" class="avatar">
+                                      <img src="image/phu.jpg" alt="Avatar" class="avatar">
+                                      <img src="image/tung.jpg" alt="Avatar" class="avatar">
+                                  </div>
+
+                                  <div class="container">
+                                      <label for="uname"><b>Username</b></label>
+                                      <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                      <label for="psw"><b>Password</b></label>
+                                      <input type="password" placeholder="Enter Password" name="psw" required>
+                                      
+                                      <button type="submit">Login</button>
+                                      <label>
+                                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                                      </label>
+                                  </div>
+
+                                  <div class="container" style="background-color:#f1f1f1">
+                                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                      <span class="psw">Forgot <a href="#">password?</a></span>
+                                  </div>
+                                  </form>
+                                </div>
+
+                                </div>
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
                         <div class="item60" id="item60">
                             <div class="w3-container w3-teal">
                                 <h1>Summer 2018</h1>
@@ -237,14 +272,14 @@
                               </div>
                             
                             
-                            
+                              
                         </div>
 
 
 
                 
 <!------------------------------------------------------------ket thuc body------------------------------------------------------------------------------------  -->
-                <div class="item18" id="item18">
+                <div class="item18" id="item18" style="background-color: white;">
                     <div class="footer_logoes">
                         <ul>
                             <li><img src="https://www.diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/gia.jpg" alt=""></li>
@@ -263,7 +298,7 @@
                        
                     </div> 
                 </div>            
-                <div class="item19" id="item19">
+                <div class="item19" id="item19" style="text-align: center;">
                     <small class="copyright">
                         <div class="page-main">
                         <div class="copy_cols">

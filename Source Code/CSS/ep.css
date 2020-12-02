@@ -71,7 +71,7 @@ head, body{
 .nav1 .item3 {
     /* grid-column: 5 / span 2; */
     width: 30%;
-    padding-top: 10px;
+    padding-top: 0px;
     font-size: 20px;
     font-family: yantramanav,sans-serif;;
 }
@@ -81,10 +81,20 @@ head, body{
     text-decoration: none;
     color:rgb(219, 166, 21);
 }
-.nav1 .item3  a:hover{
-    color:white;
-    transition: .4s;
+.nav1 .item3  a:hover{                
+    color: white;
+}
+.nav1 .item3 button {
+    margin-top: 0px;
+    height: 100%;
+    background-color: inherit;
+    border: none;
+    color: rgb(219, 166, 21);
+    outline: none;
     
+}
+.nav1 .item3 button:hover {
+    color: white;
 }
 #item1, #item2, #item3 {
     background-color:black ;
@@ -255,7 +265,7 @@ head, body{
     padding-top: 10px;
 }
 #item7 {
-    z-index: 1;
+    z-index: 3;
     
 }
 .item7 > nav {
@@ -790,7 +800,7 @@ ul.breadcrumb li {
 ul.breadcrumb li+li:before {
     padding: 8px;
     color: black;
-    content: ">\00a0";
+    content: "|\00a0";
   }
 ul.breadcrumb li a {
     color: #b0920c;
@@ -799,4 +809,133 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
     color: #bb7f06;
     text-decoration: underline;
+  }
+  /* ---------------------------------------------------------------------login form */
+#item1500 input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+#item1500 button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+#item1500 button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+#item1500 .cancelbtn {
+    float: left;
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    
+  }
+  
+  /* Center the image and position the close button */
+#item1500  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+#item1500  img.avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+#item1500 .container {
+    padding: 16px;
+    padding-left: 0px;
+  }
+  
+#item1500  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+#item1500  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 55; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+#item1500  .modal-content {
+    box-sizing: border-box;
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 80%;
+  }
+  
+  /* The Close Button (x) */
+#item1500  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+#item1500  .close:hover,
+#item1500 .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+#item1500 .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+.item1500   span.psw {
+       display: block;
+       float: none;
+    }
+.item1500  .cancelbtn {
+       width: 100%;
+    }
+  }
+
+.item1500 {
+      grid-column: 1 / span 6;
   }

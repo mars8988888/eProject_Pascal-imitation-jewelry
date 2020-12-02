@@ -45,8 +45,8 @@
         
                                     </div>
                                     <div class="item3" id="item3">
-                                        <a href=""><span class="fa fa-user"></span> Login </a>
-                                        <a href="Register.html"><span class="fa fa-pencil"></span> Register</a>
+                                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span class="fa fa-user"></span> Login</button>
+                                        <button ><span class="fa fa-pencil"></span><a href="Register.html">Resgister</a> </button>
                     
                                     </div>
                                 </div>
@@ -167,6 +167,41 @@
     </div>
                             
 <!---------------------------------------------------------day la BODY -------------------------------------------------------------------------------------------------->
+                                    <div class="item1500" id="item1500">
+                                        <div id="id01" class="modal">
+
+                                        <form class="modal-content animate" action="/action_page.php" method="post">
+                                        <div class="imgcontainer">
+                                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                            <img src="image/tuan.jpg" alt="Avatar" class="avatar">
+                                            <img src="image/nam.jpg" alt="Avatar" class="avatar">
+                                            <img src="image/phu.jpg" alt="Avatar" class="avatar">
+                                            <img src="image/tung.jpg" alt="Avatar" class="avatar">
+                                        </div>
+
+                                        <div class="container">
+                                            <label for="uname"><b>Username</b></label>
+                                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                            <label for="psw"><b>Password</b></label>
+                                            <input type="password" placeholder="Enter Password" name="psw" required>
+                                            
+                                            <button type="submit">Login</button>
+                                            <label>
+                                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                                            </label>
+                                        </div>
+
+                                        <div class="container" style="background-color:#f1f1f1">
+                                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                            <span class="psw">Forgot <a href="#">password?</a></span>
+                                        </div>
+                                        </form>
+                                    </div>
+
+                                    </div>
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
 
 
     <div class="item200">
@@ -229,22 +264,63 @@
         </form> 
 </div>    
 <!-- ------------------------------------------------------------------------------------------------------------- -->
-                <div class="item17">
-                    <h1>OUR PROMISE</h1>
-                    <ul class="promissconlist">
-                        <li>
-                            <a href=""><img src="http://diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/best-price.png" alt=""></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="http://diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/alumni-member.png" alt=""></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="http://diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/satisfaction.png" alt=""></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="http://diamondstory.com.au/pub/static/frontend/MageSky/Diamond/en_US/images/return-policy.png" alt=""></a>
-                        </li>
-                    </ul>
+
+                <div class="item1600" id="item1600">
+                    <hr style="height:2px;border-width:0;color:#b0ada9;background-color:#b0ada9; width: 30%; margin-bottom: 50px;">
+                    <div id= "team06">Project Team 06</div>
+                    <div class="row" id="row">
+                        <div class="column">
+                          <div class="card">
+                            <img src="image/tuan.jpg" alt="Jane" style="width:100%">
+                            <div class="con">
+                              <h2>Anh Tuan Nguyen</h2>
+                              <p class="title">Project Team Leader</p>
+                              <p>All for my team</p>
+                              <p>Tuan@fpt.com</p>
+                              <p><button class="button">Contact</button></p>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="column">
+                          <div class="card">
+                            <img src="image/nam.jpg" alt="Mike" style="width:100%">
+                            <div class="con">
+                              <h2>Nhat Nam Nguyen</h2>
+                              <p class="title">Team member</p>
+                              <p>Nothing impossible</p>
+                              <p>Nam@fpt.com</p>
+                              <p><button class="button">Contact</button></p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="column">
+                          <div class="card">
+                            <img src="image/phu.jpg" alt="John" style="width:100%">
+                            <div class="con">
+                              <h2>Si Phu Ngo</h2>
+                              <p class="title">Team member</p>
+                              <p>Never say never</p>
+                              <p>Phu@fpt.com</p>
+                              <p><button class="button">Contact</button></p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="card">
+                              <img src="image/tung.jpg" alt="John" style="width:100%">
+                              <div class="con">
+                                <h2>Thanh Tung Nguyen</h2>
+                                <p class="title">Team member</p>
+                                <p>Work hard play hard</p>
+                                <p>Tung@fpt.com</p>
+                                <p><button class="button">Contact</button></p>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
                 </div>
                 
                 <div class="item18" id="item18">
