@@ -1,0 +1,58 @@
+.grid-area {      /*Phân cột chia giữa Carousel vs table details*/
+  display: grid;
+  grid-template-columns: 65% 35%; /*phân chia bố cục theo cột. Nếu để auto thì cột sẽ bị change size theo content*/
+  /* grid-gap: 5px; */
+  background-color: none;
+  padding: 0px;
+}
+
+.grid-area> div {
+  background-color: none;
+  text-align: center;
+  padding: 0px 0px;  /*2nd: distance giữa 2 columns*/
+  font-size: 15px;
+  padding-right: 0%;
+  padding-left: 0%;
+}
+
+.area1{             /*phân vùng của Carousel*/
+  grid-column: auto;
+}
+
+.container1{        /*Chứa Carousel Products*/
+  width:94%;
+  margin-left: 3%;
+  margin-right: 0%;
+}
+
+.checked {          /*star rating*/
+  color: rgb(255, 217, 0);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: center;
+  padding: 11px;		/*cách dòng*/
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+.grid-area1 {      /*Phân cột chia trong Header của Product Comparison*/
+  display: grid;
+  grid-template-columns: 30% 70%; /*phân chia bố cục theo cột. Nếu để auto thì cột sẽ bị change size theo content*/
+  /* grid-gap: 5px; */
+  background-color: none;
+  padding: 0px;
+}
+
+.area3{             /*phân vùng của hình Thumbnail trong Header của Product Comparison*/
+  grid-column: auto;
+}
