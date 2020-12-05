@@ -15,7 +15,7 @@
       margin-top:15px;    /*margin: canh distance từ border ra bên ngoài*/
       margin-bottom:15px;
       padding-top:2%;    /*padding: canh distance từ border vào inside*/
-      padding-left: 0px;
+      padding-left: 3%;
       padding-right: 0px;
       /* padding-right:1% ; */
       border-left:3px solid rgba(183,183,183,1.00);
@@ -48,7 +48,7 @@
   }
 
   .hr{
-    margin-left: 4%;
+    margin-left: 1%;
     width: 88%;
     text-align:left;
     height:2px; 
@@ -205,7 +205,7 @@
     /* Remove extra left and right margins, due to padding */
     .row {
       
-      margin: 0 4%;
+      margin: 0 0%;
     }  /*1st: distance giữa các rows; 2nd: margin-left của dòng so vs div cover*/
     
     /* Clear floats after the columns */
