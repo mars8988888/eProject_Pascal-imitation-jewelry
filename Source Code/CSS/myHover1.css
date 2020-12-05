@@ -7,7 +7,7 @@
         opacity: 0.5;
     } */
     #cover{     /*Style Div cover bao bên ngoài phần Product Cards */
-      width: 99%;   /*Để fit-content sẽ ko cần phải chỉnh nữa, nội dung sao nó sẽ responsive theo như vậy*/
+      width: 100%;   /*Để fit-content sẽ ko cần phải chỉnh nữa, nội dung sao nó sẽ responsive theo như vậy*/
                              /*có thể chỉnh width:95% để control distance-side giữa dòng vs div cover*/ 
       height: fit-content;
       margin-left: 0px;
@@ -15,7 +15,7 @@
       margin-top:15px;    /*margin: canh distance từ border ra bên ngoài*/
       margin-bottom:15px;
       padding-top:2%;    /*padding: canh distance từ border vào inside*/
-      padding-left: 3%;
+      padding-left: 1%;
       padding-right: 0px;
       /* padding-right:1% ; */
       border-left:3px solid rgba(183,183,183,1.00);
