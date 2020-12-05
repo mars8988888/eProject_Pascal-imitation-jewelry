@@ -7,7 +7,7 @@
         opacity: 0.5;
     } */
     #cover{     /*Style Div cover bao bên ngoài phần Product Cards */
-      width: 100%;   /*Để fit-content sẽ ko cần phải chỉnh nữa, nội dung sao nó sẽ responsive theo như vậy*/
+      width: 99%;   /*Để fit-content sẽ ko cần phải chỉnh nữa, nội dung sao nó sẽ responsive theo như vậy*/
                              /*có thể chỉnh width:95% để control distance-side giữa dòng vs div cover*/ 
       height: fit-content;
       margin-left: 0px;
@@ -30,7 +30,7 @@
   .card {		/*style của ô <div> lớn ngoài cùng*/
         position: relative; /*chưa hiểu cái này lắm? Chỉ có bên trái of giữa thôi???*/
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        width: 200px;   /*phân biệt max width/height vs width/height nhé! Lưu ý Property 'fit-content' */
+        width: 250px;   /*phân biệt max width/height vs width/height nhé! Lưu ý Property 'fit-content' */
         height: 350px;   
         /* margin: auto; */
         text-align: center;
@@ -239,4 +239,9 @@
   padding-right: 5%;
   text-align:center;    /*Canh text ngay giữa background*/
   color: white;
+}
+
+.pagination{
+/*   float: left; */
+  font-size: 18px;
 }
