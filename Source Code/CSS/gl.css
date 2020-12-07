@@ -86,19 +86,19 @@
   transition: 3s;
   
   z-index: 999;
-
+  background-color:  #f9d3b1;
 
 }
 
 #item41 .gallery img {
   width: 100%;
-  height: auto;
+  height: 200px;
   z-index: 1;
   
 }
 
 #item41 .gallery img:hover {
-  background-color:  burlywood;
+  
   cursor: pointer;
   
   
