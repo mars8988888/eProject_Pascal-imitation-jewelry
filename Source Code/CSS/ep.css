@@ -952,6 +952,7 @@ ul.breadcrumb li a:hover {
 
 .item1500 {
       grid-column: 1 / span 6;
-      z-index: 999;
+      z-index: auto;
+      
       
   }
